@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	   <speaker gender="male" name="en1">
+	      <neutral>I will pause here <pause/> and here <pause length="long"/>and continue.</neutral>
+	   </speaker>
+	</p>
+</sml>

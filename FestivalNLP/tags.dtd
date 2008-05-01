@@ -1,0 +1,6 @@
+<!-- TAGS DTD -->
+
+<!ELEMENT sml_tags (tag)*>
+
+<!ELEMENT tag (name)>
+<!ELEMENT name (#PCDATA)>

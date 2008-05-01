@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	   <speaker gender="female">
+	      <angry>Future computers will <emph>invite</emph> us to communicate through a mix of speech, gesture, and gaze.</angry>
+	   </speaker>
+	</p>
+</sml>

@@ -1,0 +1,1678 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialogue SYSTEM "./dmtl.dtd">
+<dialogue>
+    <macros>
+	<!-- Technical Words: Talking Heads -->
+        <macro name="THS">
+            <stimulus type="text">
+                th
+            </stimulus>
+            <stimulus type="text">
+                ths
+            </stimulus>
+            <stimulus type="text">
+                talking head
+            </stimulus>
+            <stimulus type="text">
+                talking heads
+            </stimulus>
+        </macro>
+        <macro name="NATURAL_LANGUAGE">
+            <stimulus type="text">
+                natural language
+            </stimulus>
+        </macro>
+        <macro name="KEY_FRAME">
+            <stimulus type="text">
+                key-frame
+            </stimulus>
+            <stimulus type="text">
+                key frame 
+            </stimulus>
+            <stimulus type="text">
+                keyframe 
+            </stimulus>
+            <stimulus type="text">
+                key-frame algorithm
+            </stimulus>
+            <stimulus type="text">
+                key frame algorithm
+            </stimulus>
+            <stimulus type="text">
+                keyframe algorithm
+            </stimulus>
+            <stimulus type="text">
+		key-frame animation
+            </stimulus>
+            <stimulus type="text">
+                key frame animation
+            </stimulus>
+            <stimulus type="text">
+                keyframe animation
+            </stimulus>
+        </macro>
+        <macro name="PARAMETER_BASED">
+            <stimulus type="text">
+                parameter-based
+            </stimulus>
+            <stimulus type="text">
+                parameter based
+            </stimulus>
+            <stimulus type="text">
+                parameterbased
+            </stimulus>
+            <stimulus type="text">
+                parameter-based algorithm
+            </stimulus>
+            <stimulus type="text">
+                parameter based algorithm
+            </stimulus>
+            <stimulus type="text">
+                parameterbased algorithm
+            </stimulus>
+            <stimulus type="text">
+                parameter-based animation
+            </stimulus>
+            <stimulus type="text">
+                parameter based animation
+            </stimulus>
+            <stimulus type="text">
+                parameterbased animation
+            </stimulus>
+        </macro>
+        <macro name="DOWNLOAD_TO_CACHE">
+            <stimulus type="text">
+                download-to-cache
+            </stimulus>
+            <stimulus type="text">
+                download to cache
+            </stimulus>
+            <stimulus type="text">
+                download-to-cache transmission
+            </stimulus>
+            <stimulus type="text">
+                download to cache transmission
+            </stimulus>
+            <stimulus type="text">
+                download-to-cache data transmission
+            </stimulus>
+            <stimulus type="text">
+                download to cache data transmission
+            </stimulus>
+        </macro>
+        <macro name="PROGRESSIVE_DOWNLOAD">
+            <stimulus type="text">
+                progressive download
+            </stimulus>
+            <stimulus type="text">
+                progressive download transmission
+            </stimulus>
+            <stimulus type="text">
+                progressive download data transmission
+            </stimulus>
+            <stimulus type="text">
+                progressive
+            </stimulus>
+            <stimulus type="text">
+                progressive transmission
+            </stimulus>
+            <stimulus type="text">
+                progressive data
+            </stimulus>
+        </macro>
+        <macro name="REAL_TIME">
+            <stimulus type="text">
+                real-time
+            </stimulus>
+            <stimulus type="text">
+                real time
+            </stimulus>
+            <stimulus type="text">
+                realtime
+            </stimulus>
+            <stimulus type="text">
+                real-time streaming
+            </stimulus>
+            <stimulus type="text">
+                real time streaming
+            </stimulus>
+            <stimulus type="text">
+                realtime streaming
+            </stimulus>
+            <stimulus type="text">
+                real-time transmission
+            </stimulus>
+            <stimulus type="text">
+                real time transmission
+            </stimulus>
+            <stimulus type="text">
+                realtime transmission 
+            </stimulus>
+            <stimulus type="text">
+                real-time data transmission
+            </stimulus>
+            <stimulus type="text">
+                real time data transmission
+            </stimulus>
+            <stimulus type="text">
+                realtime data transmission
+            </stimulus>
+        </macro>
+        <macro name="3D">
+            <stimulus type="text">
+                3d
+            </stimulus>
+            <stimulus type="text">
+                3-d
+            </stimulus>
+            <stimulus type="text">
+                three-d
+            </stimulus>
+            <stimulus type="text">
+                three d
+            </stimulus>
+            <stimulus type="text">
+                3 dimensional
+            </stimulus>
+            <stimulus type="text">
+                3-dimensional
+            </stimulus>
+            <stimulus type="text">
+                three dimensional
+            </stimulus>
+            <stimulus type="text">
+                three-dimensional
+            </stimulus>
+            <stimulus type="text">
+                three dimensions
+            </stimulus>
+        </macro>
+        <macro name="2D">
+            <stimulus type="text">
+                2d
+            </stimulus>
+            <stimulus type="text">
+                2-d
+            </stimulus>
+            <stimulus type="text">
+                two-d
+            </stimulus>
+            <stimulus type="text">
+                two d
+            </stimulus>
+            <stimulus type="text">
+                2 dimensional
+            </stimulus>
+            <stimulus type="text">
+                2-dimensional
+            </stimulus>
+            <stimulus type="text">
+                two dimensional
+            </stimulus>
+            <stimulus type="text">
+                two-dimensional
+            </stimulus>
+            <stimulus type="text">
+                two dimensions
+            </stimulus>
+        </macro>
+	<macro name="IBR">
+            <stimulus type="text">
+                ibr
+            </stimulus>
+            <stimulus type="text">
+                image-based rendering
+            </stimulus>
+            <stimulus type="text">
+                image based rendering
+            </stimulus>
+            <stimulus type="text">
+                imagebased rendering
+            </stimulus>
+        </macro>
+
+	<!-- Technical Words: MPEG-4 -->
+        <macro name="_MPEG">
+            <stimulus type="text">
+                moving picture experts group
+            </stimulus>
+            <stimulus type="text">
+                moving pictures expert group
+            </stimulus>
+            <stimulus type="text">
+                moving pictures experts group
+            </stimulus>
+            <stimulus type="text">
+                moving picture expert group
+            </stimulus>
+        </macro>
+        <macro name="MPEG4">
+            <stimulus type="text">
+                mpeg-4
+            </stimulus>
+            <stimulus type="text">
+                mpeg4
+            </stimulus>
+            <stimulus type="text">
+                mpeg 4
+            </stimulus>
+            <stimulus type="text">
+                _MPEG 4
+            </stimulus>
+            <stimulus type="text">
+                _MPEG
+            </stimulus>
+        </macro>
+        <macro name="PHONEME">
+            <stimulus type="text">
+                phoneme
+            </stimulus>
+            <stimulus type="text">
+                phonemes
+            </stimulus>
+        </macro>
+        <macro name="VISEME">
+            <stimulus type="text">
+                viseme
+            </stimulus>
+            <stimulus type="text">
+                visemes
+            </stimulus>
+        </macro>
+        <macro name="PROSODY">
+            <stimulus type="text">
+                prosody
+            </stimulus>
+            <stimulus type="text">
+                range
+            </stimulus>
+            <stimulus type="text">
+                pitch
+            </stimulus>
+            <stimulus type="text">
+                speed
+            </stimulus>
+            <stimulus type="text">
+                rate
+            </stimulus>
+        </macro>	
+        <macro name="VISUAL_STANDARD">
+            <stimulus type="text">
+                visual standard
+            </stimulus>
+            <stimulus type="text">
+                visual-standard
+            </stimulus>
+            <stimulus type="text">
+                visual std
+            </stimulus>
+        </macro>
+        <macro name="_FACIAL">
+            <stimulus type="text">
+                facial
+            </stimulus>
+            <stimulus type="text">
+                face
+            </stimulus>
+        </macro>
+        <macro name="FACIAL_ANIMATION">
+            <stimulus type="text">
+                _FACIAL animation
+            </stimulus>
+        </macro>
+        <macro name="NEUTRAL_FACE">
+            <stimulus type="text">
+                neutral face
+            </stimulus>
+            <stimulus type="text">
+                neutrel face
+            </stimulus>
+            <stimulus type="text">
+                neutrul face
+            </stimulus>
+        </macro>
+        <macro name="FPS">
+            <stimulus type="text">
+                fp
+            </stimulus>
+            <stimulus type="text">
+                fps
+            </stimulus>
+            <stimulus type="text">
+                feature point
+            </stimulus>
+            <stimulus type="text">
+                feature points
+            </stimulus>
+        </macro>
+        <macro name="FDPS">
+            <stimulus type="text">
+                fdp
+            </stimulus>
+            <stimulus type="text">
+                fdps
+            </stimulus>
+            <stimulus type="text">
+                _FACIAL definition parameter
+            </stimulus>
+            <stimulus type="text">
+                _FACIAL definition parameters
+            </stimulus>
+        </macro>
+        <macro name="FAPS">
+            <stimulus type="text">
+                fap
+            </stimulus>
+            <stimulus type="text">
+                faps
+            </stimulus>
+            <stimulus type="text">
+		_FACIAL animation parameter
+            </stimulus>
+            <stimulus type="text">
+		_FACIAL animation parameters
+            </stimulus>    
+        </macro>
+        <macro name="FIT">
+            <stimulus type="text">
+		fit
+            </stimulus>
+            <stimulus type="text">
+		fits
+            </stimulus> 
+            <stimulus type="text">
+		_FACIAL interpolation table
+            </stimulus>
+            <stimulus type="text">
+		FAPS interpolation table
+            </stimulus>
+            <stimulus type="text">
+		_FACIAL interpolation tables
+            </stimulus>
+            <stimulus type="text">
+		FAPS interpolation tables
+            </stimulus>
+        </macro>	
+        <macro name="FAPUS">
+            <stimulus type="text">
+                fapu
+            </stimulus>
+            <stimulus type="text">
+                fapus
+            </stimulus>
+            <stimulus type="text">
+		FAPS unit
+            </stimulus>
+            <stimulus type="text">
+		FAPS units
+            </stimulus>
+        </macro>
+        <macro name="HIGH_LEVEL">
+            <stimulus type="text">
+                high-level FAPS
+            </stimulus>
+            <stimulus type="text">
+                high level FAPS
+            </stimulus>
+            <stimulus type="text">
+                highlevel FAPS
+            </stimulus>
+        </macro>
+        <macro name="LOW_LEVEL">
+            <stimulus type="text">
+                low-level FAPS
+            </stimulus>
+            <stimulus type="text">
+                low level FAPS
+            </stimulus>
+            <stimulus type="text">
+                lowlevel FAPS
+            </stimulus>
+        </macro>
+        <macro name="BODY_ANIMATION">
+            <stimulus type="text">
+                body animation
+            </stimulus>
+        </macro>
+        <macro name="DEFAULT_BODY_POSTURE">
+            <stimulus type="text">
+                default body posture
+            </stimulus>
+            <stimulus type="text">
+		default body
+            </stimulus>
+            <stimulus type="text">
+		default posture
+            </stimulus>
+            <stimulus type="text">
+		body posture
+            </stimulus>
+        </macro>
+        <macro name="BDPS">
+            <stimulus type="text">
+                bdp
+            </stimulus>
+            <stimulus type="text">
+		bdps
+            </stimulus>
+            <stimulus type="text">
+		body definition parameter
+            </stimulus>
+            <stimulus type="text">
+		body definition parameters
+            </stimulus>
+        </macro>
+        <macro name="BAPS">
+            <stimulus type="text">
+                bap
+            </stimulus>
+            <stimulus type="text">
+                baps
+            </stimulus>
+            <stimulus type="text">
+		BODY_ANIMATION parameter
+            </stimulus>
+            <stimulus type="text">
+		BODY_ANIMATION parameters
+            </stimulus>    
+        </macro>
+        <macro name="TTS">
+            <stimulus type="text">
+		tts
+            </stimulus>
+            <stimulus type="text">
+		text-to-_VOICE
+            </stimulus>
+            <stimulus type="text">
+		text to _VOICE
+            </stimulus>
+        </macro>
+        <macro name="SCORE_DRIVEN_SYNTHESIS">
+            <stimulus type="text">
+		score driven synthesis
+            </stimulus>
+            <stimulus type="text">
+		score-driven synthesis
+            </stimulus>	    
+            <stimulus type="text">
+		scoredriven synthesis
+            </stimulus>	    
+        </macro>
+        <macro name="SAOL">
+            <stimulus type="text">
+		saol
+            </stimulus>
+            <stimulus type="text">
+		structured audio orchestra language
+            </stimulus>
+            <stimulus type="text">
+		structure audio orchestra language
+            </stimulus>
+        </macro>
+	<macro name="SCORES">
+            <stimulus type="text">
+		score
+            </stimulus>
+            <stimulus type="text">
+		script
+            </stimulus>
+            <stimulus type="text">
+		scores
+            </stimulus>
+            <stimulus type="text">
+		scripts
+            </stimulus>
+            <stimulus type="text">
+		score or script
+            </stimulus>
+            <stimulus type="text">
+		script or score
+            </stimulus>
+            <stimulus type="text">
+		scores or scripts
+            </stimulus>
+            <stimulus type="text">
+		scripts or scores
+            </stimulus>
+        </macro>
+        <macro name="SASL">
+            <stimulus type="text">
+		sasl
+            </stimulus>
+            <stimulus type="text">
+		structured audio score language
+            </stimulus>
+            <stimulus type="text">
+		structure audio score language
+            </stimulus>
+        </macro>
+	<macro name="SIMPLE_AUDIO_EFFECTS">
+            <stimulus type="text">
+		simple sound
+            </stimulus>
+            <stimulus type="text">
+		simple sounds
+            </stimulus>
+            <stimulus type="text">
+		simple effect
+            </stimulus>
+            <stimulus type="text">
+		simple effects
+            </stimulus>
+            <stimulus type="text">
+		basic sound
+            </stimulus>
+            <stimulus type="text">
+		basic sounds
+            </stimulus>
+            <stimulus type="text">
+		simple audio effect
+            </stimulus>
+            <stimulus type="text">
+		simple audio effects
+            </stimulus>
+            <stimulus type="text">
+		basic audio effect
+            </stimulus>
+            <stimulus type="text">
+		basic audio effects
+            </stimulus>
+            <stimulus type="text">
+		easy audio effect
+            </stimulus>
+            <stimulus type="text">
+		easy audio effects
+            </stimulus>
+        </macro>
+	<macro name="NATURAL_SOUNDS">
+            <stimulus type="text">
+		natural sound
+            </stimulus>
+            <stimulus type="text">
+		natural sounds
+            </stimulus>
+            <stimulus type="text">
+		natural effect
+            </stimulus>
+            <stimulus type="text">
+		natural effects
+            </stimulus>
+            <stimulus type="text">
+		natural audio effect
+            </stimulus>
+            <stimulus type="text">
+		natural audio effects
+            </stimulus>
+        </macro>
+	<macro name="COMPLEX_AUDIO_EFFECTS">
+            <stimulus type="text">
+		complex audio effect
+            </stimulus>
+            <stimulus type="text">
+		complex sound
+            </stimulus>
+            <stimulus type="text">
+		complex effect
+            </stimulus>
+            <stimulus type="text">
+		complex audio effects
+            </stimulus>
+            <stimulus type="text">
+		complex sounds
+            </stimulus>
+            <stimulus type="text">
+		complex effects
+            </stimulus>
+        </macro>
+	
+	<!-- MPEG-4 Common Facial Expressions -->
+        <macro name="COMMON_EXPRESSIONS">
+            <stimulus type="text">
+                common _FACIAL expressions
+            </stimulus>
+            <stimulus type="text">
+                common expressions
+            </stimulus>
+            <stimulus type="text">
+                common _FACIAL expression
+            </stimulus>
+        </macro>
+        <macro name="ANGER">
+            <stimulus type="text">
+                anger
+            </stimulus>
+            <stimulus type="text">
+                MPEG4 anger
+            </stimulus>
+        </macro>
+        <macro name="JOY">
+            <stimulus type="text">
+                joy
+            </stimulus>
+            <stimulus type="text">
+                MPEG4 joy
+            </stimulus>
+        </macro>
+        <macro name="DISGUST">
+            <stimulus type="text">
+                disgust
+            </stimulus>
+            <stimulus type="text">
+                MPEG4 disgust
+            </stimulus>
+        </macro>
+        <macro name="SADNESS">
+            <stimulus type="text">
+                sadness
+            </stimulus>
+            <stimulus type="text">
+                MPEG4 sadness
+            </stimulus>
+        </macro>
+        <macro name="FEAR">
+            <stimulus type="text">
+                fear
+            </stimulus>
+            <stimulus type="text">
+                MPEG4 fear
+            </stimulus>
+        </macro>
+        <macro name="SURPRISE">
+            <stimulus type="text">
+                surprise
+            </stimulus>
+            <stimulus type="text">
+                MPEG4 surprise
+            </stimulus>
+        </macro>
+
+	<!-- General Words -->
+        <macro name="_EXAMPLE">
+            <stimulus type="text">
+                example
+            </stimulus>
+            <stimulus type="text">
+                instance
+            </stimulus>
+            <stimulus type="text">
+                illustration
+            </stimulus>
+            <stimulus type="text">
+                demonstration
+            </stimulus>
+            <stimulus type="text">
+                case
+            </stimulus>
+        </macro>
+        <macro name="FUNCTION">
+            <stimulus type="text">
+                function
+            </stimulus>
+            <stimulus type="text">
+                work
+            </stimulus>
+            <stimulus type="text">
+                operate
+            </stimulus>
+            <stimulus type="text">
+                operate
+            </stimulus>
+            <stimulus type="text">
+                behave
+            </stimulus>
+            <stimulus type="text">
+                act
+            </stimulus>
+            <stimulus type="text">
+                run
+            </stimulus>
+        </macro>
+	<macro name="DO">
+            <stimulus type="text">
+                do 
+            </stimulus>
+            <stimulus type="text">
+                does
+            </stimulus>
+        </macro>
+	<macro name="CAN">
+            <stimulus type="text">
+                can
+            </stimulus>
+            <stimulus type="text">
+                could
+            </stimulus>
+        </macro>
+	<macro name="CANNOT">
+            <stimulus type="text">
+                cannot
+            </stimulus>
+            <stimulus type="text">
+                can't
+            </stimulus>
+        </macro>
+	<macro name="DISCUSSING">
+            <stimulus type="text">
+                discussing
+            </stimulus>
+            <stimulus type="text">
+                talking about
+            </stimulus>
+            <stimulus type="text">
+                discuss
+            </stimulus>
+            <stimulus type="text">
+                talk about
+            </stimulus>
+        </macro>
+	<macro name="KINDS">
+            <stimulus type="text">
+                kinds
+            </stimulus>
+            <stimulus type="text">
+                types
+            </stimulus>
+            <stimulus type="text">
+                categories
+            </stimulus>
+            <stimulus type="text">
+                classes
+            </stimulus>
+            <stimulus type="text">
+                groups
+            </stimulus>
+        </macro>
+	<macro name="EXIST">
+            <stimulus type="text">
+                are there
+            </stimulus>
+            <stimulus type="text">
+                exist
+            </stimulus>
+            <stimulus type="text">
+                are available
+            </stimulus>
+            <stimulus type="text">
+                are currently available
+            </stimulus>
+        </macro>
+        <macro name="INPUT">
+            <stimulus type="text">
+                input
+            </stimulus>
+            <stimulus type="text">
+                human input
+            </stimulus>
+            <stimulus type="text">
+                questions
+            </stimulus>
+            <stimulus type="text">
+                language
+            </stimulus>
+        </macro>
+	<macro name="UNDERSTAND">
+            <stimulus type="text">
+                understand
+            </stimulus>
+            <stimulus type="text">
+                recognise
+            </stimulus>
+            <stimulus type="text">
+                recognize
+            </stimulus>
+            <stimulus type="text">
+                identify
+            </stimulus>
+            <stimulus type="text">
+                interpret
+            </stimulus>
+        </macro>
+	<macro name="RECEIVE">
+            <stimulus type="text">
+                receive
+            </stimulus>
+            <stimulus type="text">
+                get
+            </stimulus>
+            <stimulus type="text">
+                obtain
+            </stimulus>
+            <stimulus type="text">
+                accept
+            </stimulus>
+            <stimulus type="text">
+                collect
+            </stimulus>
+            <stimulus type="text">
+                be given
+            </stimulus>
+            <stimulus type="text">
+                take delivery of
+            </stimulus>
+            <stimulus type="text">
+                acquire
+            </stimulus>
+            <stimulus type="text">
+                gain
+            </stimulus>
+            <stimulus type="text">
+                inherit
+            </stimulus>
+            <stimulus type="text">
+                UNDERSTAND
+            </stimulus>
+        </macro>
+	<macro name="SLANG">
+            <stimulus type="text">
+                slang
+            </stimulus>
+            <stimulus type="text">
+                colloquial
+            </stimulus>
+            <stimulus type="text">
+                idiomatic
+            </stimulus>
+            <stimulus type="text">
+                vernacular
+            </stimulus>
+        </macro>
+	<macro name="INFORMATION">
+            <stimulus type="text">
+                information
+            </stimulus>
+            <stimulus type="text">
+                data
+            </stimulus>
+        </macro>
+	<macro name="BAD">
+            <stimulus type="text">
+                bad
+            </stimulus>
+            <stimulus type="text">
+                poor
+            </stimulus>
+            <stimulus type="text">
+                shit
+            </stimulus>
+            <stimulus type="text">
+                crap
+            </stimulus>
+            <stimulus type="text">
+                weak
+            </stimulus>
+            <stimulus type="text">
+                pathetic
+            </stimulus>
+        </macro>
+	<macro name="_VOICE">
+            <stimulus type="text">
+                voice
+            </stimulus>
+            <stimulus type="text">
+                voice-to-voice
+            </stimulus>
+            <stimulus type="text">
+                speech
+            </stimulus>
+        </macro>
+	<macro name="HUMAN">
+            <stimulus type="text">
+                human
+            </stimulus>
+            <stimulus type="text">
+                person
+            </stimulus>
+            <stimulus type="text">
+                people
+            </stimulus>
+        </macro>
+	
+	<!-- Common Questions -->
+        <macro name="_WHAT_IS">
+            <stimulus type="text">
+                what is
+            </stimulus>
+            <stimulus type="text">
+                what is a
+            </stimulus>
+            <stimulus type="text">
+                what is the
+            </stimulus>
+        </macro>
+        <macro name="EXPLAIN">
+            <stimulus type="text">
+                explain _WHAT_IS
+            </stimulus>
+            <stimulus type="text">
+                explain
+            </stimulus>
+        </macro>
+        <macro name="DESCRIBE">
+            <stimulus type="text">
+                describe _WHAT_IS
+            </stimulus>
+            <stimulus type="text">
+                describe
+            </stimulus>
+        </macro>
+        <macro name="TELL">
+            <stimulus type="text">
+                tell me _WHAT_IS
+            </stimulus>
+            <stimulus type="text">
+                tell me about
+            </stimulus>
+        </macro>
+        <macro name="WHAT_IS_OBJECT">
+            <stimulus type="text">
+                _WHAT_IS []
+            </stimulus>
+            <stimulus type="text">
+                EXPLAIN []
+            </stimulus>
+            <stimulus type="text">
+                DESCRIBE []
+            </stimulus>
+            <stimulus type="text">
+                TELL []
+            </stimulus>
+        </macro>
+        <macro name="_WHO">
+            <stimulus type="text">
+                who []
+            </stimulus>
+            <stimulus type="text">
+                whom []
+            </stimulus>
+        </macro>
+        <macro name="WHO_MADE_OBJECT">
+            <stimulus type="text">
+                _WHO(made) []
+            </stimulus>
+            <stimulus type="text">
+                _WHO(constructed) []
+            </stimulus>
+            <stimulus type="text">
+                _WHO(implemented) []
+            </stimulus>
+            <stimulus type="text">
+                _WHO(developed) []
+            </stimulus>
+            <stimulus type="text">
+                _WHO(invented) []
+            </stimulus>
+            <stimulus type="text">
+                _WHO(thought of) []
+            </stimulus>
+            <stimulus type="text">
+                _WHO(created) []
+            </stimulus>
+        </macro>
+        <macro name="_WHAT_DOES">
+            <stimulus type="text">
+                what does
+            </stimulus>
+            <stimulus type="text">
+                what does a
+            </stimulus>
+            <stimulus type="text">
+                what does the
+            </stimulus>
+        </macro>
+        <macro name="WHAT_DOES_OBJECT_MEAN">
+            <stimulus type="text">
+                _WHAT_DOES [] mean
+            </stimulus>
+            <stimulus type="text">
+                _WHAT_DOES [] stand for
+            </stimulus>
+            <stimulus type="text">
+                _WHAT_IS the meaning of []
+            </stimulus>
+        </macro>
+        <macro name="EXAMPLE_OF_OBJECT">
+           <stimulus type="text">
+                give an _EXAMPLE of []
+            </stimulus>
+            <stimulus type="text">
+                give me an _EXAMPLE of []
+            </stimulus>
+            <stimulus type="text">
+                give _EXAMPLEs of []
+            </stimulus>
+            <stimulus type="text">
+                give me _EXAMPLEs of []
+            </stimulus>
+        </macro>
+	<macro name="_HOW_DOES">
+            <stimulus type="text">
+		how does
+            </stimulus>
+            <stimulus type="text">
+                how do
+            </stimulus>
+            <stimulus type="text">
+                how does a
+            </stimulus>
+            <stimulus type="text">
+                how does the
+            </stimulus>
+        </macro>
+        <macro name="USE_OF_OBJECT">
+            <stimulus type="text">
+		_WHAT_IS [] used for
+            </stimulus>
+            <stimulus type="text">
+                _WHAT_DOES [] do
+            </stimulus>
+            <stimulus type="text">
+                _HOW_DOES [] FUNCTION
+            </stimulus>
+        </macro>
+	<macro name="WHAT_TOPICS">
+            <stimulus type="text">
+		what topics are you capable of DISCUSSING
+            </stimulus>
+            <stimulus type="text">
+		what CAN you DISCUSSING
+            </stimulus>
+            <stimulus type="text">
+		what topics CAN you DISCUSSING
+            </stimulus>
+        </macro>
+	<macro name="WHAT_EXISTS">
+            <stimulus type="text">
+		what KINDS of [] EXIST
+            </stimulus>
+        </macro>
+	<macro name="WHO_ARE_YOU">
+           <stimulus type="text">
+                _WHO(are) you
+            </stimulus>
+            <stimulus type="text">
+                what are you
+            </stimulus>
+        </macro>
+	<macro name="ARE_YOU_OBJECT">
+           <stimulus type="text">
+                are you a []
+            </stimulus>
+            <stimulus type="text">
+                are you the []
+            </stimulus>
+            <stimulus type="text">
+                are you []
+            </stimulus>
+        </macro>
+	<macro name="MY_FRIEND">
+           <stimulus type="text">
+                will you be my friend
+            </stimulus>
+            <stimulus type="text">
+                CAN i be your friend
+            </stimulus>
+            <stimulus type="text">
+                CAN you be my friend
+            </stimulus>
+        </macro>
+	<macro name="LOVE_ME">
+           <stimulus type="text">
+                do you love me
+            </stimulus>
+            <stimulus type="text">
+                CAN you love me
+            </stimulus>
+            <stimulus type="text">
+                will you love me
+            </stimulus>
+        </macro>
+        <macro name="HOW_RECEIVE_INPUT">
+            <stimulus type="text">
+		_HOW_DOES [] RECEIVE INPUT
+            </stimulus>
+            <stimulus type="text">
+                how CAN [] RECEIVE INPUT
+            </stimulus>
+            <stimulus type="text">
+                how CAN a [] RECEIVE INPUT
+            </stimulus>
+        </macro>
+        <macro name="WHAT_HAPPENS">
+            <stimulus type="text">
+		what happens
+            </stimulus>
+            <stimulus type="text">
+                what happens if
+            </stimulus>
+            <stimulus type="text">
+		what happens if a
+            </stimulus>
+            <stimulus type="text">
+		what happens if the
+            </stimulus>
+            <stimulus type="text">
+                what happens when
+            </stimulus>
+            <stimulus type="text">
+                what happens when a
+            </stimulus>
+            <stimulus type="text">
+                what happens when the
+            </stimulus>
+        </macro>
+        <macro name="TALK_TO">
+            <stimulus type="text">
+		CAN [] talk to another []
+            </stimulus>
+            <stimulus type="text">
+		CAN [] talk to []
+            </stimulus>
+            <stimulus type="text">
+		CAN [] talk to other []
+            </stimulus>
+        </macro>
+	<macro name="VOICE_RECOGNITION">
+            <stimulus type="text">
+		CAN a [] support _VOICE recognition 
+            </stimulus>
+            <stimulus type="text">
+		CAN a [] have a _VOICE conversation with a HUMAN
+            </stimulus>
+            <stimulus type="text">
+		CAN [] have a _VOICE conversation with HUMANs
+            </stimulus>
+            <stimulus type="text">
+		CAN a [] talk with a HUMAN
+            </stimulus>
+            <stimulus type="text">
+		CAN [] talk with HUMANs
+            </stimulus>
+        </macro>
+    </macros>
+	    
+    <!-- Knowledge Database -->
+
+    <!-- Default Responses -->
+    <defaulttopic>
+        <state name="no_idea" type="entry">
+            <response type="file">DEFAULT_no_idea1.xml</response>
+            <response type="file">DEFAULT_no_idea2.xml</response>
+            <response type="file">DEFAULT_no_idea3.xml</response>
+            <response type="file">DEFAULT_no_idea4.xml</response>
+        </state>
+    </defaulttopic>
+    
+    <!-- LEVEL 1: TALKING HEAD TECHNOLOGY -->
+    <topic name="tht">
+
+	<!-- LEVEL 2: TALKING HEADS GENERAL -->
+	<subtopic name="talking_heads">
+
+		<!-- LEVEL 3: TALKING HEADS DEFINITIONS -->
+		<subtopic name="ths_defns">
+			<state name="th_defn" type="entry">
+				<stimulus>WHAT_IS_OBJECT(THS)</stimulus>
+				<response type="file">talking_head_definition.xml</response>
+				<nextstate name="tht.talking_heads.ths_about.th_types" />
+				<nextstate name="tht.talking_heads.input_related.slang_words" />
+				<nextstate name="tht.talking_heads.input_related.ex_slang_words" />
+				<nextstate name="tht.talking_heads.input_related.poor_grammar" />
+				<nextstate name="tht.talking_heads.input_related.jokes" />
+				<nextstate name="tht.talking_heads.input_related.eye_contact" />
+				<nextstate name="tht.talking_heads.input_related.wrong_answer" />
+				<nextstate name="tht.talking_heads.input_related.cannot_answer" />
+				<nextstate name="tht.talking_heads.input_related.input_how" />
+				<nextstate name="tht.talking_heads.input_related.additional_info" />
+				<nextstate name="tht.talking_heads.input_related.voice_to_voice_communication" />
+				<nextstate name="tht.talking_heads.input_related.th_vs_th" />
+			</state>
+			<state name="natural_language" type="entry">
+				<stimulus>WHAT_IS_OBJECT(NATURAL_LANGUAGE)</stimulus>
+				<response type="file">natural_language_definition.xml</response>
+			</state>
+		</subtopic>
+
+		<!-- LEVEL 3: ABOUT TALKING HEAD -->
+		<subtopic name="ths_about">
+			<state name="th_who" type="entry">
+				<stimulus>WHO_ARE_YOU</stimulus>
+				<response type="file">talking_head_whoami.xml</response>
+				<nextstate name="tht.talking_heads.ths_about.th_types" />
+				<nextstate name="tht.talking_heads.ths_about.are_you_th" />
+				<nextstate name="tht.talking_heads.ths_about.th_friend" />
+				<nextstate name="tht.talking_heads.ths_about.th_love" />
+			</state>
+			<state name="topics" type="entry">
+				<stimulus>WHAT_TOPICS</stimulus>
+				<response type="file">talking_head_topics.xml</response>
+			</state>
+			<state name="th_types" type="entry">
+				<stimulus>WHAT_EXISTS(THS)</stimulus>
+				<response type="file">talking_head_types.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+				<prestate name="tht.talking_heads.ths_about.th_who" />
+			</state>
+			<state name="are_you_th" type="entry">
+				<stimulus>ARE_YOU_OBJECT(THS)</stimulus>
+				<response type="file">talking_head_are_you.xml</response>
+				<prestate name="tht.talking_heads.ths_about.th_who" />
+			</state>
+			<state name="th_friend" type="entry">
+				<stimulus>MY_FRIEND</stimulus>
+				<response type="file">talking_head_friend.xml</response>
+				<prestate name="tht.talking_heads.ths_about.th_who" />
+			</state>
+			<state name="th_love" type="entry">
+				<stimulus>LOVE_ME</stimulus>
+				<response type="file">talking_head_love.xml</response>
+				<prestate name="tht.talking_heads.ths_about.th_who" />
+			</state>
+		</subtopic>
+		
+		<!-- LEVEL 3: TEXT, SPEECH, AND VISUAL RECOGNITION -->
+		<subtopic name="input_related">
+			<state name="slang_words" type="entry">
+				<stimulus>CAN THS UNDERSTAND SLANG words</stimulus>
+				<response type="file">talking_head_slang_words.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+				<nextstate name="tht.talking_heads.input_related.ex_slang_words" />
+			</state>
+			<state name="ex_slang_words" type="entry">
+				<stimulus>EXAMPLE_OF_OBJECT(SLANG words)</stimulus>
+				<response type="file">slang_words_examples.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+				<prestate name="tht.talking_heads.input_related.slang_words" />
+			</state>
+			<state name="poor_grammar" type="entry">
+				<stimulus>CAN THS UNDERSTAND BAD grammar</stimulus>
+				<response type="file">talking_head_poor_grammar.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="jokes" type="entry">
+				<stimulus>CAN THS UNDERSTAND jokes</stimulus>
+				<response type="file">talking_head_jokes.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="eye_contact" type="entry">
+				<stimulus>CAN THS make eye contact</stimulus>
+				<response type="file">talking_head_eye_contact.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="wrong_answer" type="entry">
+				<stimulus>DO THS give wrong answer</stimulus>
+				<response type="file">talking_head_wrong_answer.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="cannot_answer" type="entry">
+				<stimulus>WHAT_HAPPENS when THS CANNOT answer a question</stimulus>
+				<response type="file">talking_head_cannot_answer.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="input_how" type="entry">
+				<stimulus>HOW_RECEIVE_INPUT(THS)</stimulus>
+				<response type="file">talking_head_input_how.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="additional_info" type="entry">
+				<stimulus>_HOW_DOES THS RECEIVE INFORMATION for its database</stimulus>
+				<response type="file">talking_head_additional_info.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="voice_to_voice_communication" type="entry">
+				<stimulus>TALK_TO(THS)</stimulus>
+				<response type="file">talking_head_voice_communication.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+			<state name="th_vs_th" type="entry">
+				<stimulus>VOICE_RECOGNITION(THS)</stimulus>
+				<response type="file">talking_head_talk_to_another.xml</response>
+				<prestate name="tht.talking_heads.ths_defns.th_defn" />
+			</state>
+		</subtopic>
+
+		<!-- LEVEL 3: ANIMATION GENERAL -->
+		<subtopic name="animation">
+
+			<!-- LEVEL 4: ANIMATION DEFINITIONS -->
+			<subtopic name="animation_defns">
+				<state name="animation_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(animation)</stimulus>
+					<response type="file">animation_definition.xml</response>
+					<nextstate name="tht.talking_heads.animation.animation_defns.key_frame_defn" />
+					<nextstate name="tht.talking_heads.animation.animation_defns.parameter_frame_defn" />
+				</state>
+				<state name="key_frame_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(KEY_FRAME)</stimulus>
+					<response type="file">key_frame_definition.xml</response>
+					<prestate name="tht.talking_heads.animation.animation_defns.animation_defn" />
+				</state>
+				<state name="parameter_frame_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(PARAMETER_BASED)</stimulus>
+					<response type="file">parameter_based_definition.xml</response>
+					<prestate name="tht.talking_heads.animation.animation_defns.animation_defn" />
+				</state>
+			</subtopic>
+		</subtopic>
+
+		<!-- LEVEL 3: DATA TRANSMISSION GENERAL -->
+		<subtopic name="data_transmission">
+
+			<!-- LEVEL 4: DATA TRANSMISSION DEFINITIONS -->
+			<subtopic name="data_transmission_defns">
+				<state name="download_to_cache_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(DOWNLOAD_TO_CACHE)</stimulus>
+					<response type="file">download_to_cache_definition.xml</response>
+				</state>
+				<state name="progressive_download_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(PROGRESSIVE_DOWNLOAD)</stimulus>
+					<response type="file">progressive_download_definition.xml</response>
+				</state>
+				<state name="real_time_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(REAL_TIME)</stimulus>
+					<response type="file">real_time_definition.xml</response>
+				</state>
+			</subtopic>
+		</subtopic>
+
+		<!-- LEVEL 3: MODELLING AND RENDERING -->
+		<subtopic name="modelling_rendering">
+
+			<!-- LEVEL 4: MODELLING AND RENDERING DEFINITIONS -->
+			<subtopic name="modelling_rendering_defns">
+				<state name="3d_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(3D)</stimulus>
+					<response type="file">three_d_definition.xml</response>
+				</state>
+				<state name="2d_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(2D)</stimulus>
+					<response type="file">two_d_definition.xml</response>
+				</state>
+				<state name="rendering_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(rendering)</stimulus>
+					<response type="file">rendering_definition.xml</response>
+				</state>
+				<state name="ibr_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(IBR)</stimulus>
+					<response type="file">ibr_definition.xml</response>
+				</state>
+			</subtopic>
+		</subtopic>
+	</subtopic>
+	    
+	<!-- LEVEL 2: MPEG-4 GENERAL -->
+	<subtopic name="mpeg4">
+
+		<!-- LEVEL 3: MPEG-4 DEFINITIONS -->
+		<subtopic name="mpeg4_defns">
+			<state name="mpeg4_defn" type="entry">
+				<stimulus>WHAT_IS_OBJECT(MPEG4)</stimulus>
+				<response type="file">mpeg4_definition.xml</response>
+				<nextstate name="tht.mpeg4.mpeg4_info.developed_by" />
+				<nextstate name="tht.mpeg4.mpeg4_info.meaning" />
+				<nextstate name="tht.mpeg4.mpeg4_info.used_for" />
+				<nextstate name="tht.mpeg4.visual_standard.visual_standard_defns.visual_standard_defn" />
+				<nextstate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.tts_defn" />
+			</state>
+			<state name="phoneme_defn" type="entry">
+				<stimulus>WHAT_IS_OBJECT(PHONEME)</stimulus>
+				<response type="file">phoneme_definition.xml</response>
+			</state>
+			<state name="viseme_defn" type="entry">
+				<stimulus>WHAT_IS_OBJECT(VISEME)</stimulus>
+				<response type="file">viseme_definition.xml</response>
+			</state>
+			<state name="prosody_defn" type="entry">
+				<stimulus>WHAT_IS_OBJECT(PROSODY)</stimulus>
+				<response type="file">prosody_definition.xml</response>
+			</state>
+		</subtopic>
+
+		<!-- LEVEL 3: MORE INFORMATION -->
+		<subtopic name="mpeg4_info">
+			<state name="developed_by_it" type="linked">
+				<stimulus>WHO_MADE_OBJECT(it)</stimulus>
+				<response type="file">mpeg4_developed_by.xml</response>
+				<prestate name="tht.mpeg4.mpeg4_defns.mpeg4_defn" />
+			</state>
+			<state name="meaning_it" type="linked">
+				<stimulus>WHAT_DOES_OBJECT_MEAN(it)</stimulus>
+				<response type="file">mpeg4_acronym.xml</response>
+				<prestate name="tht.mpeg4.mpeg4_defns.mpeg4_defn" />
+			</state>
+			<state name="used_for_it" type="linked">
+				<stimulus>USE_OF_OBJECT(it)</stimulus>
+				<response type="file">mpeg4_use.xml</response>
+				<prestate name="tht.mpeg4.mpeg4_defns.mpeg4_defn" />
+			</state>
+			<state name="developed_by" type="entry">
+				<stimulus>WHO_MADE_OBJECT(MPEG4)</stimulus>
+				<response type="file" statereference="developed_by_it"/>
+			</state>
+			<state name="meaning" type="entry">
+				<stimulus>WHAT_DOES_OBJECT_MEAN(MPEG4)</stimulus>
+				<response type="file" statereference="meaning_it"/>
+			</state>
+			<state name="used_for" type="entry">
+				<stimulus>USE_OF_OBJECT(MPEG4)</stimulus>
+				<response type="file" statereference="tht.mpeg4.mpeg4_info.used_for_it"/>
+			</state>			
+		</subtopic>
+
+		<!-- LEVEL 3: VISUAL STANDARD -->
+		<subtopic name="visual_standard">
+
+			<!-- LEVEL 4: VISUAL STANDARD DEFINITIONS -->
+			<subtopic name="visual_standard_defns">
+				<state name="visual_standard_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(VISUAL_STANDARD)</stimulus>
+					<response type="file">visual_standard_definition.xml</response>
+					<prestate name="tht.mpeg4.mpeg4_defns.mpeg4_defn" />
+					<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fa_defn" />
+					<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.ba_defn" />
+				</state>
+			</subtopic>
+
+			<!-- LEVEL 4: FACIAL ANIMATION -->
+			<subtopic name="facial_animation">
+
+				<!-- LEVEL 5: FACIAL ANIMATION DEFINITIONS -->
+				<subtopic name="fa_defns">
+					
+					<!-- Facial Animation Definition (Primary State) -->
+					<state name="fa_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(_FACIAL_ANIMATION)</stimulus>
+						<response type="file">facial_animation_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.visual_standard_defns.visual_standard_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.neutral_face_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fps_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fdps_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fit_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.faps_defn" />
+					</state>
+
+					<!-- Other Definitions (Following States) -->
+					<state name="neutral_face_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(NEUTRAL_FACE)</stimulus>
+						<response type="file">neutral_face_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fa_defn" />
+					</state>
+					<state name="fps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(FPS)</stimulus>
+						<response type="file">fps_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fa_defn" />
+					</state>
+					<state name="fdps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(FDPS)</stimulus>
+						<response type="file">fdps_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fa_defn" />
+					</state>
+					<state name="fit_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(FIT)</stimulus>
+						<response type="file">fit_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fa_defn" />
+					</state>
+
+					<!-- Facial Animation Parameters -->
+					<state name="faps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(FAPS)</stimulus>
+						<response type="file">faps_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fa_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.fapus_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.ll_faps_defn" />
+					</state>
+					<state name="fapus_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(FAPUS)</stimulus>
+						<response type="file">fapus_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.faps_defn" />
+					</state>
+					<state name="hl_faps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(HIGH_LEVEL)</stimulus>
+						<response type="file">high_level_faps_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.faps_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.common_expressions_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.anger_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.joy_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.disgust_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.sadness_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.fear_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.facial_animation.common_expressions.surprise_defn" />
+					</state>
+					<state name="ll_faps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(LOW_LEVEL)</stimulus>
+						<response type="file">low_level_faps_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.faps_defn" />
+					</state>
+				</subtopic>
+
+				<!-- LEVEL 5: HIGH-LEVEL COMMON FACIAL EXPRESSIONS -->
+				<subtopic name="common_expressions">
+					<state name="common_expressions_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(COMMON_EXPRESSIONS)</stimulus>
+						<response type="file">common_expressions_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+					<state name="anger_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(ANGER)</stimulus>
+						<response type="file">anger_common_expression_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+					<state name="joy_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(JOY)</stimulus>
+						<response type="file">joy_common_expression_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+					<state name="disgust_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(DISGUST)</stimulus>
+						<response type="file">disgust_common_expression_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+					<state name="sadness_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(SADNESS)</stimulus>
+						<response type="file">sadness_common_expression_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+					<state name="fear_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(FEAR)</stimulus>
+						<response type="file">fear_common_expression_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+					<state name="surprise_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(SURPRISE)</stimulus>
+						<response type="file">surprise_common_expression_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.facial_animation.fa_defns.hl_faps_defn" />
+					</state>
+				</subtopic>
+			</subtopic>
+
+			<!-- LEVEL 4: BODY ANIMATION -->
+			<subtopic name="body_animation">
+
+				<!-- LEVEL 5: BODY ANIMATION DEFINITIONS -->
+				<subtopic name="ba_defns">
+					<state name="ba_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(BODY_ANIMATION)</stimulus>
+						<response type="file">body_animation_definition.xml</response>
+						<prestate name="tht.mpeg4.visual_standard.visual_standard_defns.visual_standard_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.default_body_posture_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.bdps_defn" />
+						<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.baps_defn" />
+					</state>
+					<state name="default_body_posture_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(DEFAULT_BODY_POSTURE)</stimulus>
+						<response type="file">default_body_posture_definition.xml</response>
+						<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.ba_defn" />
+					</state>
+					<state name="bdps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(BDPS)</stimulus>
+						<response type="file">bdps_definition.xml</response>
+						<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.ba_defn" />
+					</state>
+					<state name="baps_defn" type="entry">
+						<stimulus>WHAT_IS_OBJECT(BAPS)</stimulus>
+						<response type="file">baps_definition.xml</response>
+						<nextstate name="tht.mpeg4.visual_standard.body_animation.ba_defns.ba_defn" />
+					</state>
+				</subtopic>
+			</subtopic>
+		</subtopic>
+		
+		<!-- LEVEL 3: AUDIO FUNCTIONALITIES -->
+		<subtopic name="audio_functionalities">
+
+			<!-- LEVEL 4: SYNTHESISED SOUND DEFINITIONS -->
+			<subtopic name="synthesised_sound_defns">
+				<state name="tts_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(TTS)</stimulus>
+					<response type="file">tts_definition.xml</response>
+					<prestate name="tht.mpeg4.mpeg4_defns.mpeg4_defn" />
+				</state>
+				<state name="score_driven_synthesis_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(SCORE_DRIVEN_SYNTHESIS)</stimulus>
+					<response type="file">score_driven_synthesis_definition.xml</response>
+				</state>
+				<state name="saol_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(SAOL)</stimulus>
+					<response type="file">saol_definition.xml</response>
+					<nextstate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.scores_defn" />
+					<nextstate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.sasl_defn" />
+				</state>
+				<state name="scores_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(SCORES)</stimulus>
+					<response type="file">scores_definition.xml</response>
+					<prestate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.saol_defn" />
+					<nextstate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.sasl_defn" />
+				</state>
+				<state name="sasl_defn" type="entry">
+					<stimulus>WHAT_IS_OBJECT(SASL)</stimulus>
+					<response type="file">sasl_definition.xml</response>
+					<prestate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.saol_defn" />
+					<prestate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.scores_defn" />
+					<nextstate name="tht.mpeg4.audio_functionalities.examples_of_sounds.ex_simple_audio_effects" />
+					<nextstate name="tht.mpeg4.audio_functionalities.examples_of_sounds.ex_natural_sounds" />
+					<nextstate name="tht.mpeg4.audio_functionalities.examples_of_sounds.ex_complex_audio_effects" />
+				</state>
+			</subtopic>
+
+			<!-- LEVEL 4: EXAMPLES OF SOUNDS -->
+			<subtopic name="examples_of_sounds">
+				<state name="ex_simple_audio_effects" type="entry">
+					<stimulus>EXAMPLE_OF_OBJECT(SIMPLE_AUDIO_EFFECTS)</stimulus>
+					<response type="file">simple_audio_effect_examples.xml</response>
+					<prestate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.sasl_defn" />
+				</state>
+				<state name="ex_natural_sounds" type="entry">
+					<stimulus>EXAMPLE_OF_OBJECT(NATURAL_SOUNDS)</stimulus>
+					<response type="file">natural_sounds_examples.xml</response>
+					<prestate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.sasl_defn" />
+				</state>
+				<state name="ex_complex_audio_effects" type="entry">
+					<stimulus>EXAMPLE_OF_OBJECT(COMPLEX_AUDIO_EFFECTS)</stimulus>
+					<response type="file">complex_audio_effect_examples.xml</response>
+					<prestate name="tht.mpeg4.audio_functionalities.synthesised_sound_defns.sasl_defn" />
+				</state>
+			</subtopic>
+		</subtopic>
+	</subtopic>
+    </topic>
+</dialogue>

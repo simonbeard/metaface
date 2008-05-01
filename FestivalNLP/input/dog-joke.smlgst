@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml-v01.dtd">
+
+<sml>
+<p>
+<neutral><pitch range="+150%"> A little dog goes into <l_roll 2 4 1200/><nod 2 3 1200/> a saloon in the Wild West, and <r_roll 2 6 1000/><nod 2 3 1000/><hl 2 4 1000/> beckons to  the bartender. </pitch></neutral>
+</p>
+
+<p>
+<neutral><speaker gender="male" name="us1">
+<pitch range="+100%">'<hl 2 5 800/> <g_left 2 8 1100/> <pause length="long"/> Hey <emph_GST 2 7 1400/><r_roll 2 8 1400/>, bartender, give me a  whiskey.'</pitch>
+</speaker></neutral>
+</p>
+
+<p>
+<neutral> The <smile 2 7 1900/> bartender ignores him.
+</neutral>
+</p>
+
+<p>
+<neutral><speaker gender="male" name="us1">
+'Hey <emph level="moderate" affect="p">bartender <emph_GST 2 5 1500/> <anger 2 2 1500/></emph>, give me a 
+<emph level="moderate" affect="p">whiskey!'</emph>
+</speaker></neutral>
+</p>
+
+<p>
+<neutral>
+<emph>Still</emph> <pitch middle="-20%"><nod 2 2 500/><r_roll 2 3 500/>ignored.</pitch>
+</neutral>
+</p>
+
+<p>
+<neutral><speaker gender="male" name="us1">
+   <anger 2 5 2200/>'HEY <emph_GST 2 6 2000/><r_roll 2 6 2000/><emph level="strong">BARMAN</emph>!!  GIMME A <emph level="strong">WHISKEY!!'</emph>
+</speaker></neutral>
+</p>
+
+<p>
+<neutral>
+The bartender <l_roll 2 5 1500/><nod 2 5 1500/> takes out his six-shooter and <r_roll 2 5 2000/> <emph_GST 2 6 2000/><emph level="moderate">shoots</emph> the dog in the
+<emph>leg</emph>, and the dog runs out the saloon, <hu 2 7 1800/><l_roll 2 5 1800/> <emph level="moderate" affect="b">howling</emph> in pain.
+</neutral>
+</p>
+
+
+<p>
+<neutral>
+Three <emph>years</emph> later, the <r_roll 2 4 1000/><nod 2 4 1000/>wee dog appears 
+<emph target="e">again</emph>, wearing boots,
+jeans, <l_roll 2 4 1000/><nod 2 4 1000/><pause length="short"/>chaps, a Stetson, <r_roll 2 5 1000/><nod 2 5 1000/>gun belt, and <r_roll 2 5 1000/><emph_GST 2 5 1000/><emph level="moderate">guns</emph>.  He ambles 
+<rate speed="-30%">slowly</rate> <l_roll 2 5 2000/><nod 2 5 2000/>into the
+saloon, goes up to the <hd 2 6 2950/><r_roll 2 6 29500/>bar, leans <emph level="strong">over</emph> it, and says to the bartender,
+</neutral>
+</p>
+
+
+<p>
+<neutral><speaker gender="male" name="us1">
+'I'm here to <emph affect="b" level="moderate">git</emph> the man that shot <smile 2 5 1000/>muh <emph level="moderate">paw</emph>.'
+</speaker></neutral>
+</p>
+
+
+
+
+
+
+</sml>
+

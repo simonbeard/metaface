@@ -1,0 +1,184 @@
+<!--
+#########################################################################
+# Dialogue Manager Tool Markup Language (DMTL) DTD, version 4.0.
+#
+# Usage:
+# <!DOCTYPE dialogue SYSTEM "http://www.vhml.org/DTD/dmtl.dtd">       
+#
+# Author: 
+# Date: 17 October 2001
+#
+#########################################################################
+-->
+
+
+<!ELEMENT dialogue (macros?, defaulttopic?, topic*)>
+
+<!ELEMENT macros (macro)*>
+
+<!ELEMENT macro (stimulus)*>
+<!ATTLIST macro 
+        name CDATA #REQUIRED>
+
+		<!--
+		# This is used to specify a default answer that triggers if
+                # there is no other answers matching the stimulus
+		-->
+<!ELEMENT defaulttopic (state)+>
+
+
+<!ELEMENT topic (subtopic)*>
+<!ATTLIST topic
+	name CDATA #REQUIRED>
+
+
+<!ELEMENT subtopic (state | subtopic)*>
+<!ATTLIST subtopic
+	name CDATA #REQUIRED
+        keywords CDATA #IMPLIED
+        evaluate CDATA #IMPLIED>
+
+
+		<!--
+		# It has a type to cater for the different types of nodes 
+                # that may need to be specified (for example, some nodes may 
+                # be "active" - that is, the Dialogue Manager which uses this 
+                # file may use an "active" node to ask the user questions or 
+                # make observations, not just respond to stimulus. 
+    		# linked - the stimulus is matched only from "nextstates" 
+    		# active - pro-active interaction with the user. 
+    		# entry - these stimuli are used for initial input from user 
+    		# switch - the start of a chained stimulus-response set of 
+                # states to cater for learned
+             	# behaviour in the user. 
+		-->
+<!ELEMENT state (stimulus*,
+                 response*,
+                 (prestate*,nextstate*,signal*)*, 
+                 evaluate?, 
+                 other?) >
+<!ATTLIST state
+	name CDATA #REQUIRED
+	type (linked | active | entry | visitswitch ) "entry">
+
+
+		<!--
+		# The stimulus is typically a question or a response to a 
+                # question or could be input from a
+		# facial recognition system - a shrug, a nod, etc. 
+		# Case is important in the input. 
+		-->
+<!ELEMENT stimulus (#PCDATA)>    
+<!ATTLIST stimulus
+	type (text | visual | audio | haptic) "text">
+
+
+		<!--
+		# The response is typically a response but marked up in vhml. 
+                # The response could be text,
+		# XHTML text, text plus EML, etc. The response could also be 
+                # a question for pro-active
+		# dialogues.
+		# The vhml does not have the vhml root tag. 
+		#
+		#The DTD for response is: 
+		<!ELEMENT response (vhml)>    
+		-->
+                <!-- 
+		# The response weight is a floating point number between 0.0 
+                # and 1.0 with 0.0 meaning no
+		# confidence in this response and 1.0 meaning total confidence 
+                # in the response.
+		# A value of 0.7 could be the typical value for most responses 
+                # which match. This gives the
+		# ability to have other responses match but at a higher priority 
+                # because the response is seen
+		# as being more important in this situtation
+		# The default value for a responseweight is 0.7.
+		# The Dialogue Manager may ignore this value. 
+		-->
+<!ELEMENT response (#PCDATA)>    
+<!ATTLIST response
+	weight CDATA "0.7"
+        statereference CDATA #IMPLIED>
+
+
+		<!--
+		# A signal tag enables the match to generate a signal or a 
+                # notification to the Dialogue
+		# Manager which it may choose to ignore. An example of the use of this 
+                # is if the match has
+		# determined that the user wants to finish the dialogue and hence 
+                # the DM should know to finish. 
+                # The value of the signals should be one of a set of descripted values
+                # instead of just CDATA, but these values are not yet decided which to be.
+		# 
+		# The DTD for signal is: 
+		-->
+<!ELEMENT signal EMPTY>    
+<!ATTLIST signal
+        name CDATA #REQUIRED>
+
+
+		<!--
+		# The prestate tag specifies a set of states which must match 
+                # for this state to match the
+		# stimulus. This allows for catering for a specific "yes" answer 
+                # but only to the prestate question. 
+		# 
+		# The DTD for prestate is: 
+		-->
+<!ELEMENT prestate EMPTY>    
+<!ATTLIST prestate
+	name CDATA #REQUIRED>
+
+
+		<!--
+		# The nextstate tag specifies a set of states to test for followup 
+                # stimulus input. These states
+		# would be checked first (perhaps with some increase in the 
+                # responseweighting?) before all
+		# other states. This allows for catering for a specific "yes" answer 
+                # to this response. 
+		# 
+		# The DTD for nextstate is: 
+		-->
+<!ELEMENT nextstate EMPTY>    
+<!ATTLIST nextstate
+	name CDATA #REQUIRED>
+
+		<!--
+		# The evaluate tag specifies different application specific test
+                # that has to be made. If the contained data begins with // it 
+                # means that it is a comment.
+		# 
+		# The DTD for evaluate is: 
+		-->
+<!ELEMENT evaluate (#PCDATA)>    
+
+
+		<!--
+		# The other tag gives the oppurtunity to specify other application
+                # specific information.
+		# 
+		# The DTD for other is: 
+		-->
+<!ELEMENT other (#PCDATA)>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

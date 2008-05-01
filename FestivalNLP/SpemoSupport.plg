@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SpemoSupport - Win32 Festival--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP12B.tmp" with contents
+[
+libxmld2.lib libFestival.lib libestools.lib libestbase.lib libeststring.lib wsock32.lib winmm.lib libcmtd.lib /nologo /dll /incremental:yes /pdb:"SpemoSupport___Win32_MBrola/MbrolaSupport.pdb" /debug /machine:I386 /nodefaultlib:"libcd" /nodefaultlib:"libc" /nodefaultlib:"libmsvcrtd" /out:"..\..\Libraries\FestivalDLL.dll" /implib:"SpemoSupport___Win32_MBrola/MbrolaSupport.lib" /pdbtype:sept /libpath:"..\..\Libraries\Festival\\" /libpath:"..\..\Libraries\LibXML\\" /libpath:"..\..\Libraries\EST\\" 
+.\SpemoSupport___Win32_MBrola\TTS_Angry.obj
+.\SpemoSupport___Win32_MBrola\TTS_C_API.obj
+.\SpemoSupport___Win32_MBrola\TTS_Central.obj
+.\SpemoSupport___Win32_MBrola\TTS_DigitalSignalProcessor.obj
+.\SpemoSupport___Win32_MBrola\TTS_Embed.obj
+.\SpemoSupport___Win32_MBrola\TTS_Emotion.obj
+.\SpemoSupport___Win32_MBrola\TTS_Emph.obj
+.\SpemoSupport___Win32_MBrola\TTS_Happy.obj
+.\SpemoSupport___Win32_MBrola\TTS_NaturalLanguageParser.obj
+.\SpemoSupport___Win32_MBrola\TTS_Pause.obj
+.\SpemoSupport___Win32_MBrola\TTS_PhonemeInfo.obj
+.\SpemoSupport___Win32_MBrola\TTS_PhonemeModifier.obj
+.\SpemoSupport___Win32_MBrola\TTS_Pitch.obj
+.\SpemoSupport___Win32_MBrola\TTS_Pron.obj
+.\SpemoSupport___Win32_MBrola\TTS_Rate.obj
+.\SpemoSupport___Win32_MBrola\TTS_Sad.obj
+.\SpemoSupport___Win32_MBrola\TTS_SimpleInFile.obj
+.\SpemoSupport___Win32_MBrola\TTS_SMLDocument.obj
+.\SpemoSupport___Win32_MBrola\TTS_SMLFilter.obj
+.\SpemoSupport___Win32_MBrola\TTS_SMLNode.obj
+.\SpemoSupport___Win32_MBrola\TTS_SMLParser.obj
+.\SpemoSupport___Win32_MBrola\TTS_SMLSimpleTag.obj
+.\SpemoSupport___Win32_MBrola\TTS_Speaker.obj
+.\SpemoSupport___Win32_MBrola\TTS_Stat.obj
+.\SpemoSupport___Win32_MBrola\TTS_StringVector.obj
+.\SpemoSupport___Win32_MBrola\TTS_TagsNode.obj
+.\SpemoSupport___Win32_MBrola\TTS_TextModifier.obj
+.\SpemoSupport___Win32_MBrola\TTS_UtteranceInfo.obj
+.\SpemoSupport___Win32_MBrola\TTS_Visual.obj
+.\SpemoSupport___Win32_MBrola\TTS_Volume.obj
+.\SpemoSupport___Win32_MBrola\TTS_WordInfo.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP12B.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library SpemoSupport___Win32_MBrola/MbrolaSupport.lib and object SpemoSupport___Win32_MBrola/MbrolaSupport.exp
+
+
+
+<h3>Results</h3>
+FestivalDLL.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	   <speaker gender="male">
+		<happy>And now, for the stars of the show: Andrew Marriott, 
+		Simon Beard, Bernie <pron sub="Cheeren">Tschirren</pron>, <pron sub="Kwok Win">Quoc Huynhqh</pron>, and John Stallo!</happy>
+	   </speaker>
+	</p>
+</sml>

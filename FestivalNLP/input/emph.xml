@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	   <neutral>
+	      I have told you so many times.
+	      I have <emph level="weak" target="ou">told</emph> you <emph target="oo">so</emph> many times.
+	      I have <emph level="weak" target="ou">told</emph> you <emph target="oo">so</emph> <emph target="e">many</emph> times.
+	   </neutral>
+	</p>
+</sml>

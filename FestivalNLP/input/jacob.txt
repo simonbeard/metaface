@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+
+<p>
+<neutral>Hi ya jacob
+</neutral>
+</p><p>
+<neutral>I have a virtual friend called jacob
+</neutral>
+</p>
+<p>
+<neutral>I have a story for you jacob:</neutral>
+</p>
+
+<p><neutral>
+Do you think I have what it takes to be a good writer, jacob?
+</neutral></p>
+<p>
+<neutral>See you later jacob
+</neutral>
+</p></sml>
+

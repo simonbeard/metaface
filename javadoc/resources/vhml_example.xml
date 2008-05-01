@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE vhml SYSTEM "./vhml.dtd">
+<vhml>
+<p>
+<happy intensity="100">I'm as happy as a kid <smile>
+<emphasis>in a candy store.</emphasis></smile></happy>
+<angry><break size="large"/> Now give me some candy</angry>
+</p>
+<p target="content">
+<embed type="html" src="./WebSite/example_happy.html"/>
+</p>
+</vhml>

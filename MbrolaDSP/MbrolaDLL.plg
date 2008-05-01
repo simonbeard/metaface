@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MbrolaDLL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP2C7.tmp" with contents
+[
+/nologo /MLd /W3 /GX /O2 /X /I "." /I "..\\" /I "..\..\Libraries\Mbrola" /I "c:\progra~1\micros~3\vc98\include" /I "c:\j2sdk1.4.2_01\include" /I "c:\j2sdk1.4.2_01\include\win32" /I "c:\users\beardsw\source" /I "c:\j2sdk1.4.1_02\include" /I "c:\j2sdk1.4.1_02\include\win32" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MBROLADLL_EXPORTS" /D "JNI" /D "MBROLA_SUPPORT" /D "_DEBUG" /D "SYSTEM_IS_WIN32" /Fp"Release/MbrolaDLL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /I /GZ /c 
+"C:\MetaFaceFramework\Source\MbrolaDSP\mbrolajni.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP2C7.tmp" 
+Creating temporary file "C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP2C8.tmp" with contents
+[
+/nologo /MLd /W3 /GX /O2 /X /I "." /I "..\\" /I "..\..\Libraries\Mbrola" /I "c:\progra~1\micros~3\vc98\include" /I "c:\j2sdk1.4.2_01\include" /I "c:\j2sdk1.4.2_01\include\win32" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MBROLADLL_EXPORTS" /D "JNI" /D "MBROLA_SUPPORT" /D "_DEBUG" /D "SYSTEM_IS_WIN32" /Fp"Release/MbrolaDLL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /I /GZ /c 
+"C:\MetaFaceFramework\Source\MbrolaDSP\mbrolawavjni.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP2C8.tmp" 
+Creating temporary file "C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP2C9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib mbrplay.lib /nologo /dll /incremental:no /pdb:"Release/MbrolaDLL.pdb" /machine:I386 /out:"..\..\Libraries\MbrolaDLL.dll" /implib:"Release/MbrolaDLL.lib" /libpath:"..\..\Libraries\Mbrola" 
+.\Release\mbrolajni.obj
+.\Release\mbrolawavjni.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\beardsw\LOCALS~1\Temp\RSP2C9.tmp"
+<h3>Output Window</h3>
+Compiling...
+mbrolajni.cpp
+Compiling...
+mbrolawavjni.cpp
+Linking...
+   Creating library Release/MbrolaDLL.lib and object Release/MbrolaDLL.exp
+
+
+
+<h3>Results</h3>
+MbrolaDLL.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

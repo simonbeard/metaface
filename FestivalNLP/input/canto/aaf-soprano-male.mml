@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE mml SYSTEM "./mml.dtd">
+
+<mml>
+    <head>
+        <title>Scale</title>
+    </head>
+
+    <song>
+	<bar>3F:4 3F:4 3F:4 3F:4</bar>
+	<bar>3Bb:4 3F:4 3D:4 3F:4</bar>
+	<bar>3Bb:3 3Bb:7 3Bb:4 4D:4</bar>
+	<bar>4C:4 3Bb:4 3A:4 3Bb:4</bar>
+	<bar>4C:2 3F:4 3F:4</bar>
+
+	<bar>3Bb:4 3F:4 3D:4 3Bb:4</bar>
+	<bar>3F:3 3F:7 3F:4 4D:4</bar>
+	<bar>4C:4 3Bb:4 3A:4 3G:4</bar>
+	<bar>3F:2 3F:4 3F:4</bar>
+
+	<bar>3G:3 3A:7 3Bb:4 3G:4</bar>
+	<bar>3F:3 3D:7 3D:4 3F:4</bar>
+	<bar>3G:4 3Bb:4 4Eb:4 4D:4</bar>
+	<bar>4C:2 3F:4 3F:4</bar>
+
+	<bar>3G:3 3A:7 3Bb:4 3G:4</bar>
+	<bar>3F:4 3Bb:4 3Bb:4 4C:4</bar>
+	<bar>4D:3 3Bb:7 4C:3 3A:7</bar>
+	<bar>3Bb:2 4D:4 4D:4</bar>
+
+	<bar>4Eb:4 4D:4 4C:4 3Bb:4</bar>
+	<bar>3A:4 3G:4 3F:4 3Bb:4</bar>
+	<bar>4D:3 3Bb:7 4C:3 3A:7</bar>
+	<bar>3Bb:2</bar>
+    </song>
+</mml>

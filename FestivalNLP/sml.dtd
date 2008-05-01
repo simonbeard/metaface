@@ -1,0 +1,52 @@
+<!-- SML DTD -->
+
+<!-- TEXT DESCRIPTION TAGS -->
+<!ELEMENT sml (p)+>
+<!ELEMENT p (speaker | angry | happy | sad | fear | neutral)+>
+<!ELEMENT speaker (#PCDATA | angry | happy | sad | fear | neutral | pitch | rate | emph | pause | volume | sayas | pron)*>
+<!ATTLIST speaker
+	gender (male | female) "male"
+	name (en1 | us1) "en1">
+
+<!-- EMOTION TAGS  -->
+<!ELEMENT angry (#PCDATA | pitch | rate | emph | pause | volume | sayas | pron)*>
+<!ELEMENT happy (#PCDATA | pitch | rate | emph | pause | volume | sayas | pron)*>
+<!ELEMENT sad (#PCDATA | pitch | rate | emph | pause | volume | sayas | pron)*>
+<!ELEMENT fear (#PCDATA | pitch | rate | emph | pause | volume | sayas | pron)*>
+<!ELEMENT neutral (#PCDATA | pitch | rate | emph | pause | volume | sayas | pron)*>
+
+<!-- SPEAKER DIRECTIVES: Tags that can encapsulate other tags -->
+<!ELEMENT pitch (#PCDATA | rate | emph | pause | volume | sayas | pron)*>
+<!ATTLIST pitch
+      middle CDATA #IMPLIED
+      base (low | medium | high) "medium"
+      range CDATA #IMPLIED>
+
+<!ELEMENT rate (#PCDATA | pitch | rate | emph | pause | volume | sayas | pron)*>
+<!ATTLIST rate
+      speed CDATA #REQUIRED>
+
+<!-- SPEAKER DIRECTIVES: Tags that can only encapsulate plain text -->
+<!ELEMENT emph (#PCDATA)>
+<!ATTLIST emph
+      level (weakest | weak | moderate | strong) "moderate"
+      affect CDATA #IMPLIED
+      target CDATA #IMPLIED>
+
+<!ELEMENT pause EMPTY>
+<!ATTLIST pause
+      length (short | medium | long) "medium">
+
+<!ELEMENT volume EMPTY>
+<!ATTLIST volume
+      level (soft | normal | loud) "normal">
+
+<!ELEMENT sayas (#PCDATA)>
+<!ATTLIST sayas
+      mode (literal | date | time | phone | currency) #REQUIRED
+      modetype (dmy | mdy) "dmy">
+
+<!ELEMENT pron (#PCDATA)>
+<!ATTLIST pron
+      sub CDATA #REQUIRED>
+

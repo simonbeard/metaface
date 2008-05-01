@@ -1,0 +1,11 @@
+<!ELEMENT eca_synthesis (text?, url*, phonemes?, faps?)>
+
+<!ELEMENT text (#PCDATA)>
+
+<!ELEMENT url (#PCDATA)>
+<!ATTLIST url 
+        target CDATA #REQUIRED>
+
+<!ELEMENT phonemes (#PCDATA)>
+
+<!ELEMENT faps (#PCDATA)>

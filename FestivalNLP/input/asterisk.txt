@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+    <p>
+        <neutral>
+Simple Simon says to repeat after me: <rate speed="-30%">****</rate>
+	</neutral>
+	<neutral>
+	Shall we go a little faster?: <pause/> <rate speed="fast">**** ****</rate>
+	</neutral>
+	<neutral>
+	Got you now, didn't I? <pause/>  <rate speed="fastest">**** ****</rate>
+	</neutral>
+    </p>
+</sml>

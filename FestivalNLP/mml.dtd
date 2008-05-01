@@ -1,0 +1,10 @@
+<!-- MML DTD -->
+
+<!-- TEXT DESCRIPTION TAGS -->
+<!ELEMENT mml (head, song)>
+
+<!ELEMENT head (title)*>
+<!ELEMENT song (bar)*>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT bar (#PCDATA)>
