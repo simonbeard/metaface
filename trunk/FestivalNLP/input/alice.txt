@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+    <p>
+        <neutral>
+<rate speed="-5%">Alice was beginning to get <emph level="weak">very</emph> <emph level="weak">tired</emph> of sitting by her sister on the bank, and of having <emph level="weak">nothing</emph> to do.</rate>
+	</neutral>
+    </p>
+</sml>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml [
+
+<!-- TEXT DESCRIPTION TAGS -->
+<!ELEMENT sml (p)+>
+<!ELEMENT p (angry | happy | sad | fear | neutral)+>
+
+<!-- EMOTION TAGS  -->
+<!ELEMENT angry (#PCDATA | pitch | emph | pause | volume | sayas)*>
+<!ELEMENT happy (#PCDATA | pitch | emph | pause | volume | sayas)*>
+<!ELEMENT sad (#PCDATA | pitch | emph | pause | volume | sayas)*>
+<!ELEMENT fear (#PCDATA | pitch | emph | pause | volume | sayas)*>
+<!ELEMENT neutral (#PCDATA | pitch | emph | pause | volume | sayas)*>
+
+<!-- SPEAKER DIRECTIVES: Tags that can encapsulate other tags -->
+<!ELEMENT pitch (#PCDATA | rate | emph | pause | volume | sayas)*>
+<!ATTLIST pitch
+      base (low | medium | high) "medium"
+      range (small | mid | large) "mid">
+
+<!ELEMENT rate (#PCDATA | pitch | emph | pause | volume | sayas)*>
+<!ATTLIST rate
+      speed (slow | medium | fast) "medium">
+
+<!-- SPEAKER DIRECTIVES: Tags that can only encapsulate plain text -->
+<!ELEMENT emph (#PCDATA)>
+<!ATTLIST emph
+      level (low | medium | high) "medium"
+	  length (short | medium | long) "medium">
+
+<!ELEMENT pause EMPTY>
+<!ATTLIST pause
+      length (short | medium | long) "medium">
+
+<!ELEMENT volume EMPTY>
+<!ATTLIST volume
+      level (soft | normal | loud) "normal">
+
+<!ELEMENT sayas (#PCDATA)>
+<!ATTLIST sayas
+      mode (date | time | phone | currency) #REQUIRED
+      modetype (dmy | mdy) "dmy">
+]>
+
+<sml>
+	<p>
+		<angry>1, 2, 3. See? I can count!</angry>
+	</p>
+</sml>

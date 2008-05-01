@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+    <p>
+        <neutral>
+	Finally, what rhymes with enough.
+	Though, <pause length="short"/>through, <pause length="short"/>plough, <pause length="short"/>cough, <pause length="short"/>hough, or tough?
+	Hiccough has the sound of cup,
+	My advice is... give it up!
+	</neutral>
+    </p>
+</sml>

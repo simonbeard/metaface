@@ -1,0 +1,483 @@
+<!--
+###############################################################################
+# Virtual Human Markup Language (VHML) DTD, version 0.7.                      #
+#                                                                             #
+# Usage:                                                                      #
+# <!DOCTYPE vhml SYSTEM "http://www.vhml.org/vhml.dtd">                       #
+#                                                                             #
+# Author: Camilla Gustavsson, c.gustavsson@home.se                            #
+#         Linda Strindlund, linda.strindlund@home.se                          #
+#         Emma Wiknertz, wiknertz@home.se                                     #
+#                                                                             #
+# Information about the VHML can be found at http://www.vhml.org              #
+#                                                                             #
+# Date: 16 November, 2001.                                                    #
+#                                                                             #
+###############################################################################
+-->
+
+<!--
+#########################################
+# Some entities in a more abstract view #
+#########################################
+-->
+
+<!-- COMMENT:
+New emotions are added here and specified below. 
+Also add emotions to the EML section in the VHML document
+at http://www.vhml.org
+-->
+<!ENTITY % EML	"afraid | 
+                 angry |
+                 confused |
+                 dazed |
+                 disgusted |
+                 happy |
+                 neutral |
+                 sad |
+                 surprised |
+                 default-emotion">
+
+<!ENTITY % Emotion "( %EML; )">
+
+<!-- COMMENT:
+New gestures are added here and specified below. 
+Also add gestures to the GML section in the VHML document
+at http://www.vhml.org
+-->
+<!ENTITY % GML	"agree |
+                 disagree |
+                 concentrate |
+                 emphasis |
+                 sigh |
+                 smile |
+                 shrug">
+<!-- COMMENT:
+New FAML elements are added here and specified below. 
+Also add elements to the FAML section in the VHML document
+at http://www.vhml.org
+-->
+<!ENTITY % FAML "look-left |
+                 look-right |
+                 look-up |
+                 look-down |
+                 eyes-left |
+                 eyes-right |
+                 eyes-up |
+                 eyes-down |
+                 head-left |
+                 head-right |
+                 head-up |
+                 head-down |
+                 head-roll-left |
+                 head-roll-right |
+                 eyebrow-up |
+                 eyebrow-down |
+		 eye-blink |
+                 wink |
+                 jaw-open |
+                 jaw-close">
+
+<!-- COMMENT:
+New SML elements are added here and specified below. 
+Also add elements to the SML section in the VHML document
+at http://www.vhml.org
+-->
+<!-- COMMENT:
+These elements are taken from SSML, Speech Synthesis Markup Language.
+Some more attributes to the elements are added.
+http://www.w3.org/TR/speech-synthesis
+-->
+<!ENTITY % SML  "break |
+                 emphasize-syllable |
+                 emphasise-syllable |
+                 phoneme |
+                 prosody |
+                 say-as |
+                 voice">
+                 
+<!ENTITY % XHTML "a |
+                  anchor">
+
+<!ENTITY % allowed-on-lower-level 
+                "(#PCDATA | mark | embed | %GML; | %FAML; | %SML; | %XHTML;)*">
+                   
+<!-- COMMENT:
+Can be a numeric value or one of 
+low, medium or high.
+-->
+<!ENTITY % intensityvalue "CDATA">
+
+<!ENTITY % targetname "CDATA">
+
+<!ENTITY % sourcepath "CDATA">  
+
+<!ENTITY % integer "CDATA"> 
+
+<!ENTITY % secs-or-msecs "CDATA">
+
+<!ENTITY % id "CDATA"> 
+
+<!ENTITY % substitute-string "CDATA"> 
+
+<!ENTITY % phoneme-string "CDATA">
+
+<!ENTITY % contour-format "CDATA"> <!-- from SSML -->
+
+<!-- COMMENT:
+Can be a relative change or one of 
+low, medium, high or default.
+-->
+<!ENTITY % pitchvalues "CDATA">
+
+<!-- COMMENT:
+Can be a relative change or one of 
+low, medium, high or default.
+-->
+<!ENTITY % rangevalues "CDATA">
+
+<!-- COMMENT:
+Can be a relative change or one of 
+slow, medium, fast or default.
+-->
+<!ENTITY % ratevalues "CDATA">
+
+<!-- COMMENT:
+Can be a relative change or one of 
+silent, soft, medium, loud or default.
+-->
+<!ENTITY % volumevalues "CDATA">     
+
+<!ENTITY % voice-name-list "CDATA"> <!-- from SSML -->
+
+<!ENTITY % link-type-list "CDATA">
+
+<!ENTITY % character-list "CDATA">
+
+<!ENTITY % uri "CDATA">
+
+<!ENTITY % coordinate-list "CDATA">
+
+<!ENTITY % script "CDATA">
+
+<!ENTITY % say-as-types "(acronym | number | number:ordinal | number:digits | 
+		          date | date:dmy | date:mdy | date:ymd | date:ym | 
+		          date:my | date:md | date:y | date:m | date:d | time | 
+                          time:hms | time:hm | time:h | duration | duration:hms | 
+                          duration:hm | duration:ms | duration:h | duration:m | 
+                          duration:s | currency | measure | telephone | name | net | 
+		          net:email | net:uri | address )"> <!-- from SSML -->
+
+<!ENTITY % default-EML-attributes  "duration %secs-or-msecs; #IMPLIED
+                                   intensity %intensityvalue; 'medium'
+    	                           mark %id; #IMPLIED
+                                   wait %secs-or-msecs; #IMPLIED">
+
+<!ENTITY % default-GML-attributes "%default-EML-attributes;">
+
+<!ENTITY % default-FAML-attributes "%default-EML-attributes;">
+
+<!ENTITY % default-XHTML-attributes "accesskey %id; #IMPLIED
+                                     coords %coordinate-list; #IMPLIED
+                                     onblur %script; #IMPLIED
+                                     onfocus %script; #IMPLIED
+                                     shape (default | rect | circle | poly) #IMPLIED
+                                     tabindex %integer; #IMPLIED"> 
+                                     <!-- The tabindex must be between 0 and 32,767 -->
+
+<!--
+#############################
+# Elements at the top level #
+#############################
+-->     
+
+<!ELEMENT vhml (paragraph | p | person | mark)+>
+<!ATTLIST vhml
+        xml:lang NMTOKEN #IMPLIED>
+
+<!-- COMMENT:
+Maybe another attribute, physics, should be included to specify what the 
+Virtual Human would look like.
+And a attribute culture/nationalty for specifying in which way the Virtual 
+Human would behave in some situations
+--> 
+<!ELEMENT person (paragraph | p | mark)*>
+<!ATTLIST person 
+      age %integer; #IMPLIED
+      category (child | teenager | adult | elder) #IMPLIED
+      gender (female | male | neutral) #IMPLIED
+      name %voice-name-list; #IMPLIED
+      variant %integer; #IMPLIED
+      disposition %Emotion; #IMPLIED>
+
+<!ELEMENT paragraph (#PCDATA | mark | embed | %EML; | %GML; | %FAML; | %SML; | %XHTML;)*>
+<!ATTLIST paragraph
+	xml:lang NMTOKEN #IMPLIED
+        target %targetname; #IMPLIED>
+
+<!ELEMENT p (#PCDATA | mark | embed | %EML; | %GML; | %FAML; | %SML; | %XHTML;)*>
+<!ATTLIST p 
+	xml:lang NMTOKEN #IMPLIED  
+        target %targetname; #IMPLIED>
+
+<!ELEMENT mark EMPTY>
+<!ATTLIST mark
+      name CDATA #REQUIRED>
+
+<!-- COMMENT:
+Should embed be able to be inside every element that 
+is not an atomic one 
+-->
+
+<!ELEMENT embed EMPTY>
+<!ATTLIST embed
+       type (audio | mml | html) #REQUIRED
+       src %sourcepath; #REQUIRED>
+
+<!-- 
+###################
+# Elements in EML #
+###################
+-->
+
+<!-- COMMENT:
+check how to do the values for intensity 0-100
+--> 
+
+<!ELEMENT afraid %allowed-on-lower-level;>
+<!ATTLIST afraid %default-EML-attributes;>
+
+<!ELEMENT angry %allowed-on-lower-level;>
+<!ATTLIST angry %default-EML-attributes;>
+ 
+<!ELEMENT confused %allowed-on-lower-level;>
+<!ATTLIST confused %default-EML-attributes;>
+ 
+<!ELEMENT dazed %allowed-on-lower-level;>
+<!ATTLIST dazed %default-EML-attributes;>
+
+<!ELEMENT disgusted %allowed-on-lower-level;>
+<!ATTLIST disgusted %default-EML-attributes;>
+
+<!ELEMENT happy %allowed-on-lower-level;>
+<!ATTLIST happy %default-EML-attributes;>
+
+<!ELEMENT neutral %allowed-on-lower-level;>
+<!ATTLIST neutral %default-EML-attributes;>
+
+<!ELEMENT sad %allowed-on-lower-level;>
+<!ATTLIST sad %default-EML-attributes;>
+
+<!ELEMENT surprised %allowed-on-lower-level;>
+<!ATTLIST surprised %default-EML-attributes;>
+
+<!--COMMENT:
+This is for the default emotion in the person element if there is one.
+Otherwise the system default emotion will be used.
+Should these attributes be here or not?
+--> 
+<!ELEMENT default-emotion %allowed-on-lower-level;>
+<!ATTLIST default-emotion %default-EML-attributes;>
+
+<!-- 
+###################
+# Elements in GML #
+###################
+-->
+ 
+<!ELEMENT agree %allowed-on-lower-level;>
+<!ATTLIST agree %default-GML-attributes;
+                repeat %integer; '1'>
+ 
+<!ELEMENT disagree %allowed-on-lower-level;>
+<!ATTLIST disagree %default-GML-attributes;
+                repeat %integer; '1'>
+
+<!ELEMENT concentrate %allowed-on-lower-level;>
+<!ATTLIST concentrate %default-GML-attributes;>
+  
+<!ELEMENT emphasis %allowed-on-lower-level;>
+<!ATTLIST emphasis %default-GML-attributes;
+                   level (reduced | none | moderate | strong) 'moderate'>
+ 
+<!ELEMENT sigh %allowed-on-lower-level;>
+<!ATTLIST sigh %default-GML-attributes;
+                repeat %integer; '1'>
+
+<!ELEMENT smile %allowed-on-lower-level;>
+<!ATTLIST smile %default-GML-attributes;>
+      
+<!ELEMENT shrug %allowed-on-lower-level;>
+<!ATTLIST shrug %default-GML-attributes;
+                repeat %integer; '1'>
+ 
+
+<!-- 
+##################
+# Element in SML #
+##################
+-->
+<!-- COMMENT:
+there should also be relative change in value
+-->
+
+<!ELEMENT break EMPTY>
+<!ATTLIST break
+      mark %id; #IMPLIED
+      size (none | small | medium | large) 'medium'
+      time %secs-or-msecs; #IMPLIED
+      smooth (yes | no) 'yes'>
+
+<!ELEMENT emphasize-syllable (#PCDATA)>
+<!ATTLIST emphasize-syllable 
+      mark %id; #IMPLIED
+      target %phoneme-string; #IMPLIED
+      level (reduced | none | moderate | strong) 'moderate'
+      affect (pitch | duration | both) 'pitch'>
+
+<!ELEMENT emphasise-syllable (#PCDATA)>
+<!ATTLIST emphasise-syllable 
+      mark %id; #IMPLIED
+      target %phoneme-string; #IMPLIED
+      level (reduced | none | moderate | strong) 'moderate'
+      affect (pitch | duration | both) 'pitch'>
+
+<!ELEMENT phoneme (#PCDATA)>
+<!ATTLIST phoneme 
+      mark %id; #IMPLIED
+      alphabet (ipa | worldbet | xsampa) #IMPLIED
+      ph %phoneme-string; #REQUIRED>
+
+<!ELEMENT prosody %allowed-on-lower-level;>
+<!ATTLIST prosody
+      mark %id; #IMPLIED 
+      contour %contour-format; #IMPLIED 
+      duration %secs-or-msecs; #IMPLIED
+      pitch %pitchvalues; 'default'
+      range %rangevalues; 'default'
+      rate %ratevalues; 'default'
+      valume %volumevalues; 'default'>
+
+<!ELEMENT say-as (#PCDATA)>
+<!ATTLIST say-as
+      mark %id; #IMPLIED
+      type %say-as-types; #REQUIRED
+      sub %substitute-string; #IMPLIED>
+      
+<!-- COMMENT:
+what is this name-voice-list as a type for name???
+-->
+<!ELEMENT voice %allowed-on-lower-level;>
+<!ATTLIST voice 
+      mark %id; #IMPLIED
+      age %integer; #IMPLIED
+      category (child | teenager | adult | elder) #IMPLIED
+      gender (female | male | neutral) #IMPLIED
+      name %voice-name-list; #IMPLIED
+      variant %integer; #IMPLIED>
+
+
+<!-- 
+####################
+# Elements in FAML #
+####################
+-->
+
+<!ELEMENT look-left %allowed-on-lower-level;>
+<!ATTLIST look-left %default-FAML-attributes;>
+ 
+<!ELEMENT look-right %allowed-on-lower-level;>
+<!ATTLIST look-right %default-FAML-attributes;>
+
+<!ELEMENT look-up %allowed-on-lower-level;>
+<!ATTLIST look-up %default-FAML-attributes;>
+
+<!ELEMENT look-down %allowed-on-lower-level;>
+<!ATTLIST look-down %default-FAML-attributes;>
+
+<!ELEMENT eyes-left %allowed-on-lower-level;>
+<!ATTLIST eyes-left %default-FAML-attributes;>
+
+<!ELEMENT eyes-right %allowed-on-lower-level;>
+<!ATTLIST eyes-right %default-FAML-attributes;>
+
+<!ELEMENT eyes-up %allowed-on-lower-level;>
+<!ATTLIST eyes-up %default-FAML-attributes;>
+
+<!ELEMENT eyes-down %allowed-on-lower-level;>
+<!ATTLIST eyes-down %default-FAML-attributes;>
+
+<!ELEMENT head-left %allowed-on-lower-level;>
+<!ATTLIST head-left %default-FAML-attributes;>
+
+<!ELEMENT head-right %allowed-on-lower-level;>
+<!ATTLIST head-right %default-FAML-attributes;>
+ 
+<!ELEMENT head-up %allowed-on-lower-level;>
+<!ATTLIST head-up %default-FAML-attributes;>
+
+<!ELEMENT head-down %allowed-on-lower-level;>
+<!ATTLIST head-down %default-FAML-attributes;>
+
+<!ELEMENT head-roll-left %allowed-on-lower-level;>
+<!ATTLIST head-roll-left %default-FAML-attributes;>
+
+<!ELEMENT head-roll-right %allowed-on-lower-level;>
+<!ATTLIST head-roll-right %default-FAML-attributes;>
+
+<!ELEMENT eyebrow-up %allowed-on-lower-level;>
+<!ATTLIST eyebrow-up %default-FAML-attributes;
+                     which (both | left | right) 'both'>
+
+<!ELEMENT eyebrow-down %allowed-on-lower-level;>
+<!ATTLIST eyebrow-down %default-FAML-attributes;
+                     which (both | left | right) 'both'>
+
+<!ELEMENT eye-blink %allowed-on-lower-level;>
+<!ATTLIST eye-blink %default-FAML-attributes;
+                     repeat %integer; '1'>
+ 
+<!ELEMENT wink %allowed-on-lower-level;>
+<!ATTLIST wink %default-FAML-attributes;
+               which (left | right) 'left'
+               repeat %integer; '1'>
+
+<!ELEMENT jaw-open %allowed-on-lower-level;>
+<!ATTLIST jaw-open %default-FAML-attributes;>
+
+<!ELEMENT jaw-close %allowed-on-lower-level;>
+<!ATTLIST jaw-close %default-FAML-attributes;>
+
+
+
+<!-- 
+#####################
+# Elements in XHTML #
+#####################
+-->
+
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST a %default-XHTML-attributes;
+            charset %character-list; #IMPLIED
+            href %uri; #IMPLIED
+            hreflang NMTOKEN #IMPLIED
+            name %id; #IMPLIED
+            rel %link-type-list; #IMPLIED
+            rev %link-type-list; #IMPLIED
+            type NMTOKEN #IMPLIED>
+
+<!ELEMENT anchor (#PCDATA)>
+<!ATTLIST anchor %default-XHTML-attributes;
+                 charset %character-list; #IMPLIED
+                 href %uri; #IMPLIED
+                 hreflang NMTOKEN #IMPLIED
+                 name %id; #IMPLIED
+                 rel %link-type-list; #IMPLIED
+                 rev %link-type-list; #IMPLIED
+                 type NMTOKEN #IMPLIED>
+
+
+
+
+
+

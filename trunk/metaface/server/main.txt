@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: metaface.server.MetaFaceDefaultServer
+Class-Path: ./MPEG4.jar ./NLP.jar ./DSP.jar ./InteractionManager.jar
+

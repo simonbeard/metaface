@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	<neutral>I am saying <rate>   </rate> something </neutral>
+	</p>
+</sml>

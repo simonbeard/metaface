@@ -1,0 +1,4 @@
+<!-- LYR DTD -->
+<!ELEMENT song (lyric)+>
+<!ELEMENT lyric (bar)+>
+<!ELEMENT bar (#PCDATA)>

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: metaface.presynthesise.PreSynthesise
+Class-Path: ./MPEG4.jar ./NLP.jar ./DSP.jar ./Server.jar
+

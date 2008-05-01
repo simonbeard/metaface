@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	   <speaker gender="male">
+	      <happy>You say lasagna, I say <pron sub="larsarnia">lasagna</pron></happy>
+	      <happy>You say tomato, I say <pron sub="toemaytoe">tomato</pron></happy>
+	   </speaker>
+	</p>
+</sml>

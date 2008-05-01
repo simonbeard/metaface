@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml-v01.dtd">
+
+<sml>
+	<p>
+	     <neutral><speaker gender="female">Future computers will <emph>invite</emph> us to communicate through 
+		a mix of speech, gesture, and gaze.</speaker></neutral>
+	</p>
+	<p>
+	      <neutral>
+		      <speaker gender="female">You say lasagna, I say <pron sub="larsarnia">lasagna</pron></speaker>
+		  </neutral>
+	      <happy>You say tomato, I say <pron sub="toemaytoe">tomato</pron></happy>
+	</p>
+	<p>
+		<happy>
+		And now, for the stars of the show: Andrew Marriott, Simon Beard, 
+		Bernie <pron sub="Cheeren">Tschirren</pron>, and John Stallo!
+		</happy>
+	</p>
+	<p>
+		<neutral><speaker gender="female">I can say currency properly, like $5,010.20.</speaker></neutral>
+	</p>
+	<p>
+	<neutral>I'll now take a breath of helium <pause/> <pitch middle="highest">and will continue to talk until it </pitch> runs out</neutral>
+	</p>
+</sml>

@@ -1,0 +1,129 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    package metaface.dsp;<a name="line.1"></a>
+<FONT color="green">002</FONT>    import java.util.*;<a name="line.2"></a>
+<FONT color="green">003</FONT>    import java.io.*;<a name="line.3"></a>
+<FONT color="green">004</FONT>    import java.applet.*;<a name="line.4"></a>
+<FONT color="green">005</FONT>    /**<a name="line.5"></a>
+<FONT color="green">006</FONT>     *  This class defines the structure by which all inheriting Digital Signal<a name="line.6"></a>
+<FONT color="green">007</FONT>     *  Processors (DSPs) must adhere. A DSP takes textual phoneme information and<a name="line.7"></a>
+<FONT color="green">008</FONT>     *  synthesises speech audio<a name="line.8"></a>
+<FONT color="green">009</FONT>     *<a name="line.9"></a>
+<FONT color="green">010</FONT>     *@author     Simon Beard <a name="line.10"></a>
+<FONT color="green">011</FONT>     *@version    1.0<a name="line.11"></a>
+<FONT color="green">012</FONT>     */<a name="line.12"></a>
+<FONT color="green">013</FONT>    public abstract class DigitalSignalProcessor {<a name="line.13"></a>
+<FONT color="green">014</FONT>    <a name="line.14"></a>
+<FONT color="green">015</FONT>            /**<a name="line.15"></a>
+<FONT color="green">016</FONT>             *  Constructor for the DSP<a name="line.16"></a>
+<FONT color="green">017</FONT>             */<a name="line.17"></a>
+<FONT color="green">018</FONT>            public DigitalSignalProcessor() { }<a name="line.18"></a>
+<FONT color="green">019</FONT>    <a name="line.19"></a>
+<FONT color="green">020</FONT>    <a name="line.20"></a>
+<FONT color="green">021</FONT>            /**<a name="line.21"></a>
+<FONT color="green">022</FONT>             *  Sythesise phoneme information into a speech audio file<a name="line.22"></a>
+<FONT color="green">023</FONT>             *<a name="line.23"></a>
+<FONT color="green">024</FONT>             *@param  input  A string of phoneme information<a name="line.24"></a>
+<FONT color="green">025</FONT>             *@return        A speech audio file name string<a name="line.25"></a>
+<FONT color="green">026</FONT>             */<a name="line.26"></a>
+<FONT color="green">027</FONT>            public abstract String synthesise(String input);<a name="line.27"></a>
+<FONT color="green">028</FONT>    <a name="line.28"></a>
+<FONT color="green">029</FONT>    <a name="line.29"></a>
+<FONT color="green">030</FONT>            /**<a name="line.30"></a>
+<FONT color="green">031</FONT>             *  &lt;p><a name="line.31"></a>
+<FONT color="green">032</FONT>             *<a name="line.32"></a>
+<FONT color="green">033</FONT>             *  Get the visual equivalent of a phoneme&lt;/p> <a name="line.33"></a>
+<FONT color="green">034</FONT>             * &lt;IMG SRC="../../resources/visemes.jpg"/><a name="line.34"></a>
+<FONT color="green">035</FONT>             *<a name="line.35"></a>
+<FONT color="green">036</FONT>             *@param  ph  The phoneme to look up<a name="line.36"></a>
+<FONT color="green">037</FONT>             *@return     An MPEG-4 numbered viseme representing the phoneme<a name="line.37"></a>
+<FONT color="green">038</FONT>             */<a name="line.38"></a>
+<FONT color="green">039</FONT>            public abstract int getViseme(String ph);<a name="line.39"></a>
+<FONT color="green">040</FONT>    <a name="line.40"></a>
+<FONT color="green">041</FONT>    <a name="line.41"></a>
+<FONT color="green">042</FONT>            /**<a name="line.42"></a>
+<FONT color="green">043</FONT>             *  &lt;p><a name="line.43"></a>
+<FONT color="green">044</FONT>             *<a name="line.44"></a>
+<FONT color="green">045</FONT>             *  Get the visual equivalents of phonemes&lt;/p><a name="line.45"></a>
+<FONT color="green">046</FONT>             *<a name="line.46"></a>
+<FONT color="green">047</FONT>             *@param  phonemeinfo  The phoneme information (phonemes and duration)<a name="line.47"></a>
+<FONT color="green">048</FONT>             *@return              The MPEG-4 numbered visemes representing the phoneme<a name="line.48"></a>
+<FONT color="green">049</FONT>             *      information and durations (milliseconds):&lt;br><a name="line.49"></a>
+<FONT color="green">050</FONT>             *      [viseme1][duration1][viseme2][duration2][viseme3] ...<a name="line.50"></a>
+<FONT color="green">051</FONT>             */<a name="line.51"></a>
+<FONT color="green">052</FONT>            public abstract Vector phonemesToVisemes(String phonemeinfo);<a name="line.52"></a>
+<FONT color="green">053</FONT>    <a name="line.53"></a>
+<FONT color="green">054</FONT>    <a name="line.54"></a>
+<FONT color="green">055</FONT>            /**<a name="line.55"></a>
+<FONT color="green">056</FONT>             *  Get a phoneme string representing a silent duration<a name="line.56"></a>
+<FONT color="green">057</FONT>             *<a name="line.57"></a>
+<FONT color="green">058</FONT>             *@param  milliseconds  The duration of the silence<a name="line.58"></a>
+<FONT color="green">059</FONT>             *@return               A phoneme string representing the silence<a name="line.59"></a>
+<FONT color="green">060</FONT>             */<a name="line.60"></a>
+<FONT color="green">061</FONT>            public abstract String silencePhonemeString(int milliseconds);<a name="line.61"></a>
+<FONT color="green">062</FONT>    }<a name="line.62"></a>
+<FONT color="green">063</FONT>    <a name="line.63"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>

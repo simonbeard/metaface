@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+	<p>
+	<neutral>I'll now take a breath of helium <pause/> <pitch middle="highest">and will continue to talk until it </pitch> runs out</neutral>
+	</p>
+</sml>

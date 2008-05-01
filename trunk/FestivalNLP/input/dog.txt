@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE sml SYSTEM "./sml.dtd">
+
+<sml>
+
+<p>
+<neutral>Hi ya jacob
+</neutral>
+</p><p>
+<neutral>I have a virtual friend called jacob
+</neutral>
+</p><p>
+<neutral>I have a story for you jacob:
+
+</neutral>
+</p><p>
+<neutral>A little dog goes into a saloon in the Wild West, and beckons to
+the bartender.
+</neutral>
+</p><p>
+<neutral><speaker gender="male" name="us1">'Hey, bartender, gimme a whiskey.'
+</speaker></neutral>
+</p><p>
+<neutral>The bartender ignores him.
+</neutral>
+</p><p>
+<neutral><speaker gender="male" name="us1">'Hey bartender, gimme a whiskey!'
+</speaker></neutral>
+</p><p>
+<neutral>Still ignored.
+</neutral>
+</p><p>
+<neutral><speaker gender="male" name="us1">'HEY BARMAN!!  GIMME A WHISKEY!!'
+</speaker></neutral>
+</p><p>
+<neutral>The bartender takes out his six-shooter and shoots the dog in the
+leg, and the dog runs out the saloon, howling in pain.
+</neutral>
+</p><p>
+<neutral>Three years later, the wee dog appears again, wearing boots,
+jeans, chaps, a Stetson, gun belt, and guns.  <pause/>He ambles slowly into the
+saloon, goes up to the bar, leans over it, and says to the bartender,
+</neutral>
+</p><p>
+<neutral><speaker gender="male" name="us1">'I'm here to git the man that shot muh paw.'
+</speaker></neutral>
+</p><p>
+<neutral></neutral>
+</p><p>
+<neutral>
+Do you think I have what it takes to be a good writer, jacob? </neutral>
+</p><p>
+<neutral>See you later jacob
+</neutral>
+</p></sml>
+

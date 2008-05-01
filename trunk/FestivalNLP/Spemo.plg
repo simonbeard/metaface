@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Spemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP3B4.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /Gi /GX /ZI /Od /I "D:/simon/LibxmlSupport/include/" /I "D:/simon/FestivalSupport/include/" /I "D:/simon/EstSupport/include/" /I "D:/simon/CantoSupport/" /I "D:/simon/SpemoSupport/" /I "D:/simon/SpemoSupport/Tags/" /I "D:/simon/SpemoSupport/xml/" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "SYSTEM_IS_WIN32" /FR"Debug/" /Fp"Debug/Spemo.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Simon\SpemoSupport\Tags\TTS_Embed.cpp"
+"D:\Simon\SpemoSupport\main.c"
+"D:\Simon\SpemoSupport\TTS_C_API.cpp"
+"D:\Simon\SpemoSupport\TTS_Central.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP3B4.tmp" 
+Creating temporary file "C:\TEMP\RSP3B5.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib libxmld2.lib libFestival.lib libestools.lib libestbase.lib libeststring.lib wsock32.lib winmm.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Spemo.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /out:"Debug/Spemo.exe" /pdbtype:sept /libpath:"D:/simon/LibxmlSupport/" /libpath:"D:/simon/FestivalSupport/" /libpath:"D:/simon/EstSupport/" 
+.\Debug\TTS_Angry.obj
+.\Debug\TTS_Embed.obj
+.\Debug\TTS_Emotion.obj
+.\Debug\TTS_Emph.obj
+.\Debug\TTS_Happy.obj
+.\Debug\TTS_Pause.obj
+.\Debug\TTS_PhonemeModifier.obj
+.\Debug\TTS_Pitch.obj
+.\Debug\TTS_Pron.obj
+.\Debug\TTS_Rate.obj
+.\Debug\TTS_Sad.obj
+.\Debug\TTS_SMLSimpleTag.obj
+.\Debug\TTS_Speaker.obj
+.\Debug\TTS_Stat.obj
+.\Debug\TTS_TextModifier.obj
+.\Debug\TTS_Volume.obj
+.\Debug\TTS_SMLFilter.obj
+.\Debug\TTS_StringVector.obj
+.\Debug\TTS_TagsNode.obj
+.\Debug\main.obj
+.\Debug\TTS_C_API.obj
+.\Debug\TTS_Central.obj
+.\Debug\TTS_DigitalSignalProcessor.obj
+.\Debug\TTS_NaturalLanguageParser.obj
+.\Debug\TTS_PhonemeInfo.obj
+.\Debug\TTS_SimpleInFile.obj
+.\Debug\TTS_SMLDocument.obj
+.\Debug\TTS_SMLNode.obj
+.\Debug\TTS_SMLParser.obj
+.\Debug\TTS_UtteranceInfo.obj
+.\Debug\TTS_Visual.obj
+.\Debug\TTS_WordInfo.obj
+.\Debug\MML_BarInfo.obj
+.\Debug\MML_FrequencyTable.obj
+.\Debug\MML_LyricsIterator.obj
+.\Debug\MML_LyricsNode.obj
+.\Debug\MML_MusicIterator.obj
+.\Debug\MML_MusicNode.obj
+.\Debug\MML_Singer.obj
+]
+Creating command line "link.exe @C:\TEMP\RSP3B5.tmp"
+<h3>Output Window</h3>
+Compiling...
+TTS_Embed.cpp
+d:\simon\estsupport\include\siod_est.h(55) : warning C4099: 'obj' : type name first seen using 'struct' now seen using 'class'
+        d:\simon\estsupport\include\siod_defs.h(31) : see declaration of 'obj'
+d:\simon\estsupport\include\siod_est.h(55) : warning C4099: 'obj' : type name first seen using 'struct' now seen using 'class'
+        d:\simon\estsupport\include\siod_defs.h(31) : see declaration of 'obj'
+d:\simon\estsupport\include\siod_est.h(55) : warning C4099: 'obj' : type name first seen using 'struct' now seen using 'class'
+        d:\simon\estsupport\include\siod_defs.h(31) : see declaration of 'obj'
+main.c
+d:\simon\spemosupport\tts_c_api.h(16) : fatal error C1083: Cannot open include file: 'jni.h': No such file or directory
+TTS_C_API.cpp
+cl.exe terminated at user request.
+
+</pre>
+</body>
+</html>

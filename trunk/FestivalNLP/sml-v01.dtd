@@ -1,0 +1,107 @@
+<!--
+#########################################################################
+# Speech Markup Language (SML) DTD, version 1.0.
+#
+# Usage:
+# <!DOCTYPE sml SYSTEM "./sml-v01.dtd">
+#
+# Author: John Stallo
+# Date: 11 September, 2000.
+#
+#########################################################################
+-->
+
+<!ENTITY % LowLevelElements 	"pitch |
+				rate |
+				emph |
+				pause |
+				volume |
+				sayas |
+				pron |
+				speaker |
+				stat">
+
+<!ENTITY % EmotionElements	"angry |
+				happy |
+				sad |
+				fear |
+				neutral">
+
+<!ENTITY % HighLevelElements	"angry |
+				happy |
+				sad |
+				fear |
+				neutral |
+				embed">
+
+<!ELEMENT sml (p)+>
+
+<!ELEMENT p (%HighLevelElements;)+>
+
+<!ELEMENT speaker (#PCDATA | %LowLevelElements;)*>
+<!ATTLIST speaker
+	gender (male | female) "male"
+	name (en1 | us1) "en1">
+
+<!-- 
+#######################################
+# HIGH-LEVEL TAGS 
+#######################################
+-->
+<!-- EMOTION TAGS -->
+<!ELEMENT angry (#PCDATA | %LowLevelElements;)*>
+<!ELEMENT happy (#PCDATA | %LowLevelElements;)*>
+<!ELEMENT sad (#PCDATA | %LowLevelElements;)*>
+<!ELEMENT fear (#PCDATA | %LowLevelElements;)*>
+<!ELEMENT neutral (#PCDATA | %LowLevelElements;)*>
+
+<!-- OTHER HIGH-LEVEL TAGS -->
+<!ELEMENT embed EMPTY>
+<!ATTLIST embed
+	type CDATA #REQUIRED
+	src CDATA #IMPLIED
+	music_file CDATA #IMPLIED
+	lyr_file CDATA #IMPLIED>
+
+<!-- 
+#######################################
+# LOW-LEVEL TAGS
+#######################################
+-->
+<!ELEMENT pitch (#PCDATA | %LowLevelElements;)*>
+<!ATTLIST pitch
+      middle CDATA #IMPLIED
+      base (low | medium | high) "medium"
+      range CDATA #IMPLIED>
+
+<!ELEMENT rate (#PCDATA | %LowLevelElements;)*>
+<!ATTLIST rate
+      speed CDATA #REQUIRED>
+
+<!ELEMENT stat (#PCDATA | %LowLevelElements;)*>
+
+<!-- SPEAKER DIRECTIVES: Tags that can only encapsulate plain text -->
+<!ELEMENT emph (#PCDATA)>
+<!ATTLIST emph
+      level (weakest | weak | moderate | strong) "moderate"
+      affect CDATA #IMPLIED
+      target CDATA #IMPLIED>
+
+<!ELEMENT pause EMPTY>
+<!ATTLIST pause
+      length (short | medium | long) "medium"
+	  msec CDATA #IMPLIED
+	  smooth (yes | no) "no">
+
+<!ELEMENT volume (#PCDATA)>
+<!ATTLIST volume
+      level CDATA #REQUIRED>
+
+<!ELEMENT sayas (#PCDATA)>
+<!ATTLIST sayas
+      mode (literal | date | time | phone | currency) #REQUIRED
+      modetype (dmy | mdy) "dmy">
+
+<!ELEMENT pron (#PCDATA)>
+<!ATTLIST pron
+      sub CDATA #REQUIRED>
