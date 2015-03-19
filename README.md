@@ -1,0 +1,1 @@
+The *MetaFace* framework aims to provide developers with an extensible anthropomorphic framework; the purpose being to create intuitive user interaction for websites. This will enable developers to construct websites based on anthropomorphic metaphors, such as, lecturers, shopkeepers, bank tellers, and tour guides.
