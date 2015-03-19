@@ -1,0 +1,1 @@
+A blend of metaphor and facial animation - intuative interaction through a familiar interface.
